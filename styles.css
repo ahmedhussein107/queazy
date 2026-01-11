@@ -575,6 +575,11 @@ body {
     display: none;
 }
 
+.option-btn .option-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
 /* Option States - Enhanced */
 .option-btn.correct {
     background: var(--color-success-light);
@@ -588,7 +593,8 @@ body {
     color: white;
 }
 
-.option-btn.correct .option-icon {
+/* Show only checkmark icon for correct answers */
+.option-btn.correct .option-icon.icon-check {
     display: block;
     color: var(--color-success);
 }
@@ -605,7 +611,8 @@ body {
     color: white;
 }
 
-.option-btn.incorrect .option-icon {
+/* Show only X icon for incorrect answers */
+.option-btn.incorrect .option-icon.icon-x {
     display: block;
     color: var(--color-error);
 }

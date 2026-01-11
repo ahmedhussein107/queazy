@@ -75,7 +75,7 @@ class QuizApp {
         this.elements.sectionList.innerHTML = this.quizData.sections.map((section, index) => `
             <button class="section-item" data-index="${index}">
                 <span class="section-number">${index + 1}</span>
-                <span class="section-name">${section.section_name}</span>
+                <span class="section-name">${section.section}</span>
                 <span class="question-count">${section.questions.length} questions</span>
             </button>
         `).join('');
@@ -168,7 +168,7 @@ class QuizApp {
         this.score = 0;
         this.answered = false;
 
-        this.elements.sectionTitle.textContent = section.section_name;
+        this.elements.sectionTitle.textContent = section.section;
         this.elements.scoreDisplay.textContent = '0';
 
         this.showScreen('quiz');
@@ -188,18 +188,20 @@ class QuizApp {
         // Display question
         this.elements.questionText.textContent = question.question;
 
-        // Display options
+        // Display options - answer is now a letter (A, B, C, D)
         this.elements.optionsContainer.innerHTML = question.options.map((option, index) => {
             const letter = String.fromCharCode(65 + index); // A, B, C, D
             return `
-                <button class="option-btn" data-option="${option}">
+                <button class="option-btn" data-answer="${letter}">
                     <span class="option-letter">${letter}</span>
-                    <span class="option-text">${option.substring(3)}</span>
-                    <span class="option-icon">
-                        <svg class="icon-correct" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <span class="option-text">${option}</span>
+                    <span class="option-icon icon-check">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <path d="M20 6L9 17l-5-5"/>
                         </svg>
-                        <svg class="icon-incorrect" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    </span>
+                    <span class="option-icon icon-x">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <path d="M18 6L6 18M6 6l12 12"/>
                         </svg>
                     </span>
@@ -218,9 +220,13 @@ class QuizApp {
         if (this.answered) return;
         this.answered = true;
 
-        const selectedAnswer = optionBtn.dataset.option;
+        const selectedAnswer = optionBtn.dataset.answer; // Now uses letter (A, B, C, D)
         const question = this.questions[this.currentQuestionIndex];
         const isCorrect = selectedAnswer === question.answer;
+
+        // Get the correct answer text for display
+        const correctAnswerIndex = question.answer.charCodeAt(0) - 65; // A=0, B=1, C=2, D=3
+        const correctAnswerText = question.options[correctAnswerIndex];
 
         // Disable all options
         const allOptions = this.elements.optionsContainer.querySelectorAll('.option-btn');
@@ -228,7 +234,7 @@ class QuizApp {
             btn.disabled = true;
 
             // Highlight correct answer
-            if (btn.dataset.option === question.answer) {
+            if (btn.dataset.answer === question.answer) {
                 btn.classList.add('correct');
             }
         });
@@ -242,8 +248,8 @@ class QuizApp {
             optionBtn.classList.add('incorrect');
         }
 
-        // Show feedback
-        this.showFeedback(isCorrect, question.answer);
+        // Show feedback with full answer text
+        this.showFeedback(isCorrect, `${question.answer}. ${correctAnswerText}`);
 
         // Show next button
         this.elements.nextBtn.classList.remove('hidden');
