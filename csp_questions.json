@@ -1,0 +1,545 @@
+{
+    "metadata": {
+        "description": "CSP Practice Questions extracted from Section 1-5 PDFs",
+        "generated_at": "2026-01-11",
+        "topic": "Constraint Satisfaction Problems"
+    },
+    "sections": [
+        {
+            "section_name": "Section 1: Defining CSPs",
+            "source_file": "section1.pdf",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "In a constraint graph, edges represent:",
+                    "options": [
+                        "A. Variables",
+                        "B. Domains",
+                        "C. Binary constraints",
+                        "D. Costs"
+                    ],
+                    "answer": "C. Binary constraints"
+                },
+                {
+                    "id": 2,
+                    "question": "A constraint hypergraph is used when:",
+                    "options": [
+                        "A. All constraints are unary",
+                        "B. Constraints involve 2 variables",
+                        "C. Constraints involve 3 or more variables",
+                        "D. The domains are continuous"
+                    ],
+                    "answer": "C. Constraints involve 3 or more variables"
+                },
+                {
+                    "id": 3,
+                    "question": "In a dual graph, what becomes a node?",
+                    "options": [
+                        "A. Each variable",
+                        "B. Each domain",
+                        "C. Each constraint",
+                        "D. Each value in the domain"
+                    ],
+                    "answer": "C. Each constraint"
+                },
+                {
+                    "id": 6,
+                    "question": "A CSP state is represented as:",
+                    "options": [
+                        "A. A single black-box node",
+                        "B. A set of variables with values",
+                        "C. A path from start to goal",
+                        "D. A linear inequality"
+                    ],
+                    "answer": "B. A set of variables with values"
+                },
+                {
+                    "id": 7,
+                    "question": "What is a consistent assignment?",
+                    "options": [
+                        "A. Every variable is assigned",
+                        "B. No constraint is violated",
+                        "C. All values are different",
+                        "D. Variable domains are infinite"
+                    ],
+                    "answer": "B. No constraint is violated"
+                },
+                {
+                    "id": 10,
+                    "question": "Alldiff is what type of constraint?",
+                    "options": [
+                        "A. Unary",
+                        "B. Binary",
+                        "C. Global",
+                        "D. Disjunctive"
+                    ],
+                    "answer": "C. Global"
+                },
+                {
+                    "id": 11,
+                    "question": "Disjunctive constraints express:",
+                    "options": [
+                        "A. Variables must be equal",
+                        "B. At least one of two conditions must hold",
+                        "C. All variables must differ",
+                        "D. Domains are continuous"
+                    ],
+                    "answer": "B. At least one of two conditions must hold"
+                },
+                {
+                    "id": 17,
+                    "question": "Solving general CSPs is:",
+                    "options": [
+                        "A. Polynomial",
+                        "B. NP-complete",
+                        "C. Undecidable",
+                        "D. Exponential for finite domains"
+                    ],
+                    "answer": "B. NP-complete"
+                },
+                {
+                    "id": 18,
+                    "question": "A partial assignment is consistent if:",
+                    "options": [
+                        "A. It assigns all variables",
+                        "B. It avoids violating any constraints so far",
+                        "C. The constraint graph is acyclic",
+                        "D. The domains are discrete"
+                    ],
+                    "answer": "B. It avoids violating any constraints so far"
+                },
+                {
+                    "id": 25,
+                    "question": "Which CSP type is undecidable in the general case?",
+                    "options": [
+                        "A. Linear constraints over integers",
+                        "B. Nonlinear constraints over integers",
+                        "C. Linear programming problems",
+                        "D. Finite-domain binary CSPs"
+                    ],
+                    "answer": "B. Nonlinear constraints over integers"
+                },
+                {
+                    "id": 29,
+                    "question": "A binary CSP contains:",
+                    "options": [
+                        "A. Only binary constraints",
+                        "B. Only unary constraints",
+                        "C. Unary and binary constraints",
+                        "D. Any number of constraints"
+                    ],
+                    "answer": "C. Unary and binary constraints"
+                },
+                {
+                    "id": 36,
+                    "question": "A CSP with preferences is called:",
+                    "options": [
+                        "A. Binary CSP",
+                        "B. Global CSP",
+                        "C. Constrained optimization problem",
+                        "D. Linear program"
+                    ],
+                    "answer": "C. Constrained optimization problem"
+                }
+            ]
+        },
+        {
+            "section_name": "Section 2: Constraint Propagation",
+            "source_file": "section2.pdf",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "What is the main goal of constraint propagation?",
+                    "options": [
+                        "A. Increase domain size",
+                        "B. Reduce domains using constraints",
+                        "C. Assign all variables",
+                        "D. Replace search completely"
+                    ],
+                    "answer": "B. Reduce domains using constraints"
+                },
+                {
+                    "id": 3,
+                    "question": "Node consistency removes values that violate:",
+                    "options": [
+                        "A. Binary constraints",
+                        "B. Ternary constraints",
+                        "C. Unary constraints",
+                        "D. Global constraints"
+                    ],
+                    "answer": "C. Unary constraints"
+                },
+                {
+                    "id": 5,
+                    "question": "Arc consistency deals with:",
+                    "options": [
+                        "A. One variable",
+                        "B. Two variables",
+                        "C. Three variables",
+                        "D. All variables"
+                    ],
+                    "answer": "B. Two variables"
+                },
+                {
+                    "id": 8,
+                    "question": "Arc consistency fails to detect inconsistency in:",
+                    "options": [
+                        "A. Unary constraint problems",
+                        "B. Linear equations",
+                        "C. Australia map coloring with 2 colors",
+                        "D. Numeric CSPs"
+                    ],
+                    "answer": "C. Australia map coloring with 2 colors"
+                },
+                {
+                    "id": 9,
+                    "question": "AC-3 enforces:",
+                    "options": [
+                        "A. Node consistency",
+                        "B. Arc consistency",
+                        "C. Path consistency",
+                        "D. k-consistency"
+                    ],
+                    "answer": "B. Arc consistency"
+                },
+                {
+                    "id": 10,
+                    "question": "AC-3 stops with failure when:",
+                    "options": [
+                        "A. Queue is empty",
+                        "B. No arc is consistent",
+                        "C. A domain becomes empty",
+                        "D. All variables are assigned"
+                    ],
+                    "answer": "C. A domain becomes empty"
+                },
+                {
+                    "id": 13,
+                    "question": "Path consistency Involves:",
+                    "options": [
+                        "A. Single variables",
+                        "B. Pairs of variables",
+                        "C. Triples of variables",
+                        "D. All variables"
+                    ],
+                    "answer": "C. Triples of variables"
+                },
+                {
+                    "id": 26,
+                    "question": "AtMost(10, X1, X2) means:",
+                    "options": [
+                        "A. X1 = X2 = 10",
+                        "B. X1 + X2 <= 10",
+                        "C. X1 + X2 <= 10",
+                        "D. X1 + X2 >= 10"
+                    ],
+                    "answer": "B. X1 + X2 <= 10"
+                },
+                {
+                    "id": 27,
+                    "question": "Simple inconsistency check for AtMost uses:",
+                    "options": [
+                        "A. Maximum sum",
+                        "B. Average sum",
+                        "C. Minimum sum",
+                        "D. Random sum"
+                    ],
+                    "answer": "C. Minimum sum"
+                },
+                {
+                    "id": 30,
+                    "question": "Bounds propagation is useful for:",
+                    "options": [
+                        "A. Small domains",
+                        "B. Large integer domains",
+                        "C. Boolean CSPs",
+                        "D. Tree CSPs"
+                    ],
+                    "answer": "B. Large integer domains"
+                }
+            ]
+        },
+        {
+            "section_name": "Section 3: Backtracking Search",
+            "source_file": "section3.pdf",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "In CSP backtracking, why are complete assignments only at depth n?",
+                    "options": [
+                        "A) Each constraint is binary",
+                        "B) Each variable is assigned exactly once",
+                        "C) Domains shrink monotonically",
+                        "D) Variables are revisited"
+                    ],
+                    "answer": "B) Each variable is assigned exactly once"
+                },
+                {
+                    "id": 2,
+                    "question": "Which feature of CSPs removes the factorial blow-up in search trees?",
+                    "options": [
+                        "A) Symmetry",
+                        "B) Independence",
+                        "C) Consistency",
+                        "D) Commutativity"
+                    ],
+                    "answer": "D) Commutativity"
+                },
+                {
+                    "id": 5,
+                    "question": "Which heuristic is best described as 'fail-first'?",
+                    "options": [
+                        "A) Degree heuristic",
+                        "B) MRV",
+                        "C) Least-constraining value",
+                        "D) Random ordering"
+                    ],
+                    "answer": "B) MRV"
+                },
+                {
+                    "id": 9,
+                    "question": "Least-constraining value ordering tries to:",
+                    "options": [
+                        "A) Maximize pruning immediately",
+                        "B) Delay failure",
+                        "C) Reduce future domain eliminations",
+                        "D) Enforce arc consistency"
+                    ],
+                    "answer": "C) Reduce future domain eliminations"
+                },
+                {
+                    "id": 11,
+                    "question": "Forward checking removes values from:",
+                    "options": [
+                        "A) All variables",
+                        "B) Assigned variables",
+                        "C) Neighboring unassigned variables",
+                        "D) The constraint graph"
+                    ],
+                    "answer": "C) Neighboring unassigned variables"
+                },
+                {
+                    "id": 14,
+                    "question": "MAC differs from forward checking because it:",
+                    "options": [
+                        "A) Applies AC-3 recursively",
+                        "B) Uses heuristics",
+                        "C) Ignores variable order",
+                        "D) Prevents backtracking"
+                    ],
+                    "answer": "A) Applies AC-3 recursively"
+                },
+                {
+                    "id": 18,
+                    "question": "A conflict set records:",
+                    "options": [
+                        "A) All constraints",
+                        "B) All assigned variables",
+                        "C) Variables causing failure",
+                        "D) Unassigned neighbors"
+                    ],
+                    "answer": "C) Variables causing failure"
+                },
+                {
+                    "id": 22,
+                    "question": "A no-good represents:",
+                    "options": [
+                        "A) A failed variable",
+                        "B) A violated constraint",
+                        "C) A useless heuristic",
+                        "D) A forbidden combination of assignments"
+                    ],
+                    "answer": "D) A forbidden combination of assignments"
+                },
+                {
+                    "id": 31,
+                    "question": "Constraint learning improves CSP search mainly by:",
+                    "options": [
+                        "A) Reducing domains",
+                        "B) Avoiding repeated failures",
+                        "C) Enforcing consistency",
+                        "D) Removing variables"
+                    ],
+                    "answer": "B) Avoiding repeated failures"
+                }
+            ]
+        },
+        {
+            "section_name": "Section 4: Local Search",
+            "source_file": "section4.pdf",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Local search for CSPs uses which type of state formulation?",
+                    "options": [
+                        "A) Partial-state formulation",
+                        "B) Constraint graph formulation",
+                        "C) Complete-state formulation",
+                        "D) Binary-state formulation"
+                    ],
+                    "answer": "C) Complete-state formulation"
+                },
+                {
+                    "id": 2,
+                    "question": "In local search for CSPs, a state is considered a solution when:",
+                    "options": [
+                        "A) All variables are assigned",
+                        "B) No constraints are violated",
+                        "C) The heuristic value is minimal",
+                        "D) The search terminates"
+                    ],
+                    "answer": "B) No constraints are violated"
+                },
+                {
+                    "id": 4,
+                    "question": "Which value does min-conflicts choose for a selected variable?",
+                    "options": [
+                        "A) The most frequent value",
+                        "B) A random value",
+                        "C) The least-used value",
+                        "D) The value with minimum conflicts"
+                    ],
+                    "answer": "D) The value with minimum conflicts"
+                },
+                {
+                    "id": 6,
+                    "question": "Why does min-conflicts perform exceptionally well on n-queens?",
+                    "options": [
+                        "A) The problem is tree-structured",
+                        "B) Solutions are densely distributed",
+                        "C) Domains are binary",
+                        "D) Constraints are independent"
+                    ],
+                    "answer": "B) Solutions are densely distributed"
+                },
+                {
+                    "id": 11,
+                    "question": "Why can local search handle very large CSPs efficiently?",
+                    "options": [
+                        "A) It stores the full search tree",
+                        "B) It uses recursion",
+                        "C) It reasons over partial assignments",
+                        "D) It uses constant memory"
+                    ],
+                    "answer": "D) It uses constant memory"
+                },
+                {
+                    "id": 13,
+                    "question": "A plateau in the search landscape occurs when:",
+                    "options": [
+                        "A) All constraints are satisfied",
+                        "B) All neighbors have worse scores",
+                        "C) Many states have equal evaluation",
+                        "D) The algorithm backtracks"
+                    ],
+                    "answer": "C) Many states have equal evaluation"
+                },
+                {
+                    "id": 18,
+                    "question": "Constraint weighting differs from min-conflicts because it:",
+                    "options": [
+                        "A) Uses backtracking",
+                        "B) Assigns costs to constraints",
+                        "C) Eliminates plateaus completely",
+                        "D) Requires arc consistency"
+                    ],
+                    "answer": "B) Assigns costs to constraints"
+                },
+                {
+                    "id": 23,
+                    "question": "Local search is especially useful in online CSPs because it:",
+                    "options": [
+                        "A) Always finds optimal solutions",
+                        "B) Can repair existing solutions",
+                        "C) Uses constraint propagation",
+                        "D) Avoids randomness"
+                    ],
+                    "answer": "B) Can repair existing solutions"
+                }
+            ]
+        },
+        {
+            "section_name": "Section 5: The Structure of Problems",
+            "source_file": "section5.pdf",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "What does an independent subproblem mean in a CSP?",
+                    "options": [
+                        "A) A problem where all variables are connected to each other",
+                        "B) A subproblem that can be solved separately, and its solution combined with others",
+                        "C) A subproblem that requires backtracking to solve",
+                        "D) A problem that has only one solution"
+                    ],
+                    "answer": "B) A subproblem that can be solved separately, and its solution combined with others"
+                },
+                {
+                    "id": 4,
+                    "question": "A tree-structured CSP has the property that:",
+                    "options": [
+                        "A) Every variable is connected to every other variable",
+                        "B) There is only one path between any two variables",
+                        "C) All constraints are unary",
+                        "D) Variables have no constraints"
+                    ],
+                    "answer": "B) There is only one path between any two variables"
+                },
+                {
+                    "id": 5,
+                    "question": "What is directional arc consistency (DAC) in a tree-structured CSP?",
+                    "options": [
+                        "A) Every variable is arc-consistent with all previous variables",
+                        "B) Every variable is arc-consistent with each variable that comes after it in a chosen ordering",
+                        "C) Every variable has only one allowed value",
+                        "D) Only leaf nodes are consistent"
+                    ],
+                    "answer": "B) Every variable is arc-consistent with each variable that comes after it in a chosen ordering"
+                },
+                {
+                    "id": 8,
+                    "question": "What is a cycle cutset in CSPs?",
+                    "options": [
+                        "A) A variable with a single value",
+                        "B) A subset of variables that, when assigned, turns the remaining constraint graph into a tree",
+                        "C) A variable that breaks value symmetry",
+                        "D) A constraint that connects all variables"
+                    ],
+                    "answer": "B) A subset of variables that, when assigned, turns the remaining constraint graph into a tree"
+                },
+                {
+                    "id": 10,
+                    "question": "What is the main idea of tree decomposition?",
+                    "options": [
+                        "A) To assign values to variables one by one",
+                        "B) To transform the constraint graph into a tree of clusters of variables",
+                        "C) To apply min-conflicts to all variables",
+                        "D) To remove independent subproblems"
+                    ],
+                    "answer": "B) To transform the constraint graph into a tree of clusters of variables"
+                },
+                {
+                    "id": 14,
+                    "question": "What is value symmetry in CSPs?",
+                    "options": [
+                        "A) Symmetry in the constraint graph",
+                        "B) Equivalent solutions obtained by permuting variable values",
+                        "C) A CSP with all domains equal",
+                        "D) Symmetric domains for a single variable"
+                    ],
+                    "answer": "B) Equivalent solutions obtained by permuting variable values"
+                },
+                {
+                    "id": 16,
+                    "question": "Why is breaking value symmetry helpful?",
+                    "options": [
+                        "A) It reduces the search space by eliminating equivalent solutions",
+                        "B) It ensures directional arc consistency",
+                        "C) It increases domain sizes",
+                        "D) It converts the graph into a tree"
+                    ],
+                    "answer": "A) It reduces the search space by eliminating equivalent solutions"
+                }
+            ]
+        }
+    ]
+}
