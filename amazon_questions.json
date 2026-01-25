@@ -1,0 +1,1162 @@
+{
+    "sections": [
+        {
+            "section": "Customer Obsession",
+            "questions": [
+                {
+                    "id": "co_q1",
+                    "question": "A customer complains about a feature that your team spent months developing. What is the best response according to Customer Obsession?",
+                    "options": [
+                        "Explain to the customer why the feature is actually good",
+                        "Listen to understand their concern and work backwards from their needs",
+                        "Ignore the complaint since most customers are happy",
+                        "Ask your manager to handle the difficult customer"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "co_q2",
+                    "question": "A competitor launches a feature that customers love. What should you do?",
+                    "options": [
+                        "Ignore it and focus on your own roadmap",
+                        "Copy the feature exactly as they built it",
+                        "Be inspired by it and think how you can improve your customer experience",
+                        "Criticize the competitor's approach publicly"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "co_q3",
+                    "question": "You're deciding whether to add customer reviews to your product pages. Publishers object because some reviews might be negative. What should you do?",
+                    "options": [
+                        "Remove reviews to keep publishers happy",
+                        "Only show 5-star reviews",
+                        "Add honest reviews because they help customers make better decisions",
+                        "Let publishers write the reviews themselves"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "co_q4",
+                    "question": "During an economic downturn, how should you approach customer relationships according to Customer Obsession?",
+                    "options": [
+                        "Extract maximum revenue from customers while you can",
+                        "Proactively help customers optimize costs so they can succeed long-term",
+                        "Reduce customer support to save money",
+                        "Focus only on acquiring new customers"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "co_q5",
+                    "question": "What is the purpose of a 'working backwards' document at Amazon?",
+                    "options": [
+                        "To document code after it's written",
+                        "To ensure the product will matter for customers before writing any code",
+                        "To track project timelines",
+                        "To assign blame when projects fail"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "co_q6",
+                    "question": "Being customer obsessed means you should never consider:",
+                    "options": [
+                        "What competitors are doing",
+                        "Economic sustainability of your decisions",
+                        "Neither - both should be considered while focusing on customers",
+                        "Customer feedback"
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        {
+            "section": "Ownership",
+            "questions": [
+                {
+                    "id": "own_q1",
+                    "question": "You notice a problem in a system that isn't your responsibility. What should you do?",
+                    "options": [
+                        "Ignore it - it's not your job",
+                        "Send a vague email mentioning the issue",
+                        "Find the owner or take care of it yourself if there's no owner",
+                        "Wait for someone else to notice"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "own_q2",
+                    "question": "What is the difference between a 'renter' and an 'owner' mindset?",
+                    "options": [
+                        "Renters work harder than owners",
+                        "Owners think about long-term consequences; renters don't care about damage",
+                        "There is no difference",
+                        "Owners only focus on their specific tasks"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "own_q3",
+                    "question": "A colleague says 'I don't get paid more if I come up with ideas to increase revenue, so why bother?' This demonstrates:",
+                    "options": [
+                        "Strong ownership mentality",
+                        "Lack of ownership mentality",
+                        "Good work-life balance",
+                        "Appropriate scope management"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "own_q4",
+                    "question": "What does 'never say that's not my job' mean in practice?",
+                    "options": [
+                        "Do everyone else's work for them",
+                        "Ensure problems are owned and have a path to resolution",
+                        "Never set boundaries on your role",
+                        "Accept all tasks without question"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "own_q5",
+                    "question": "When facing a hard problem, what should an owner do?",
+                    "options": [
+                        "Punt it to someone else with more experience",
+                        "Wait for management to assign someone",
+                        "Pull together the right people to find the solution",
+                        "Document why it's impossible to solve"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "own_q6",
+                    "question": "Owners should always ask themselves:",
+                    "options": [
+                        "What would get me promoted fastest?",
+                        "What would I do if this were my personal money?",
+                        "How can I minimize my workload?",
+                        "Who else could do this instead of me?"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Invent and Simplify",
+            "questions": [
+                {
+                    "id": "is_q1",
+                    "question": "What often happens to companies that rely only on their original innovative idea?",
+                    "options": [
+                        "They thrive forever",
+                        "They struggle to sustain success in a dynamic world",
+                        "They automatically keep innovating",
+                        "They become monopolies"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "is_q2",
+                    "question": "Amazon's marketplace initially failed as an 'auctions' website similar to eBay. What does this teach about innovation?",
+                    "options": [
+                        "Never copy competitors",
+                        "Give up after the first failure",
+                        "Keep iterating until you find the right simplifying solution",
+                        "Auction websites can never work"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "is_q3",
+                    "question": "What was the 'simplifying assumption' that made Amazon's marketplace successful?",
+                    "options": [
+                        "Create a separate website for third-party sellers",
+                        "Only allow verified sellers",
+                        "Put third-party products on the same pages as first-party products",
+                        "Remove third-party sellers entirely"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "is_q4",
+                    "question": "What does 'not invented here' syndrome refer to?",
+                    "options": [
+                        "Refusing to consider good ideas from external sources",
+                        "Always inventing everything in-house",
+                        "Both A and B represent this syndrome",
+                        "Being proud of internal innovation"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "is_q5",
+                    "question": "According to Invent and Simplify, being 'misunderstood for long periods of time' is:",
+                    "options": [
+                        "A sign you should stop",
+                        "Acceptable when doing truly new things",
+                        "Never acceptable",
+                        "A reason to pivot immediately"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "is_q6",
+                    "question": "What is an example of 'whole cloth invention' at Amazon?",
+                    "options": [
+                        "Adding more products to retail",
+                        "Pioneering AWS and cloud computing",
+                        "Increasing delivery speed",
+                        "Hiring more employees"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Are Right, A Lot",
+            "questions": [
+                {
+                    "id": "ar_q1",
+                    "question": "What is a common misinterpretation of 'Are Right, A Lot'?",
+                    "options": [
+                        "It's about having good judgment",
+                        "It means my idea should always win in debates",
+                        "It requires seeking diverse perspectives",
+                        "It involves questioning your own beliefs"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ar_q2",
+                    "question": "In meetings with your team, when should leaders typically speak?",
+                    "options": [
+                        "First, to set the direction",
+                        "Last, to hear everyone's input first",
+                        "Not at all",
+                        "Only when disagreeing"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ar_q3",
+                    "question": "What does 'seeking to disconfirm your beliefs' mean?",
+                    "options": [
+                        "Always agreeing with others",
+                        "Actively questioning your closely held opinions to find better answers",
+                        "Never having strong opinions",
+                        "Letting others make all decisions"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ar_q4",
+                    "question": "The goal of being 'Right, A Lot' is ultimately about:",
+                    "options": [
+                        "Winning arguments",
+                        "Being the smartest person in the room",
+                        "Getting to the best possible answer for customers",
+                        "Never being wrong"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "ar_q5",
+                    "question": "In the best meetings, what sometimes happens regarding the leader's opinion?",
+                    "options": [
+                        "The leader always shares their opinion first",
+                        "The leader never attends",
+                        "The leader may never need to express an opinion because the team sorted it out",
+                        "The leader overrules the team"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "ar_q6",
+                    "question": "Amazon operates in 'high areas of ambiguity.' What skill is essential for leaders in this environment?",
+                    "options": [
+                        "Avoiding making decisions",
+                        "Sifting through noise to find the signal that matters for customers",
+                        "Always following the original plan",
+                        "Delegating all decisions"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Learn and Be Curious",
+            "questions": [
+                {
+                    "id": "lc_q1",
+                    "question": "According to Learn and Be Curious, what happens at the moment you think there's little left to learn?",
+                    "options": [
+                        "You've reached your full potential",
+                        "You are unwinding as an individual and professional",
+                        "You can relax and coast",
+                        "You're ready for promotion"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "lc_q2",
+                    "question": "What differentiates people who grow substantially in their careers from those who stagnate?",
+                    "options": [
+                        "Their starting intelligence",
+                        "Their willingness to keep learning and being curious",
+                        "Their connections and networking",
+                        "Their educational background"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "lc_q3",
+                    "question": "When your expertise in an area 'flips upside down' due to change, the right mindset is to:",
+                    "options": [
+                        "Feel threatened and resist the change",
+                        "Retire from that area",
+                        "View it as part of the fun and embrace learning anew",
+                        "Ignore the changes and stick to what you know"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "lc_q4",
+                    "question": "What's the difference between talking about learning and actually learning?",
+                    "options": [
+                        "There is no difference",
+                        "Talking about learning is more important",
+                        "You must build a real plan to change AND actually make that change",
+                        "Learning only happens in classrooms"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "lc_q5",
+                    "question": "The goal should be to get better:",
+                    "options": [
+                        "Only during annual reviews",
+                        "Every few years",
+                        "Even a little bit better every single day",
+                        "Only when forced to"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "lc_q6",
+                    "question": "Self-assessment and self-awareness are critical for:",
+                    "options": [
+                        "Avoiding criticism",
+                        "Identifying what you do well and what you need to improve",
+                        "Proving you're right",
+                        "Getting promoted faster"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Hire and Develop the Best",
+            "questions": [
+                {
+                    "id": "hd_q1",
+                    "question": "When should you lower the hiring bar?",
+                    "options": [
+                        "When there's time pressure on a project",
+                        "When the role is considered less important",
+                        "Never - who we hire is one of the most important decisions",
+                        "When the economy is difficult"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hd_q2",
+                    "question": "In Amazon's hiring loops, each interviewer focuses on:",
+                    "options": [
+                        "General impressions",
+                        "A specific leadership principle",
+                        "Technical skills only",
+                        "Cultural fit only"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hd_q3",
+                    "question": "Being a manager is described as:",
+                    "options": [
+                        "A right for high performers",
+                        "A privilege with responsibility to develop your team",
+                        "Just another role",
+                        "Something everyone should aspire to"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hd_q4",
+                    "question": "Which managers have the biggest positive impact on careers?",
+                    "options": [
+                        "Those who are always nice",
+                        "Those who only praise strengths",
+                        "Those who identify both strengths AND growth areas",
+                        "Those who leave you alone"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hd_q5",
+                    "question": "What mistake have many companies made recently regarding feedback?",
+                    "options": [
+                        "Giving too much critical feedback",
+                        "Not telling people what they're great at",
+                        "Finding it harder to give critical feedback about growth areas",
+                        "Being too honest with employees"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hd_q6",
+                    "question": "'Raise the bar' in hiring means:",
+                    "options": [
+                        "Every new hire should be as good as the average",
+                        "Every new hire should make the team better than before",
+                        "Only hire people exactly like existing employees",
+                        "Only hire from top universities"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Insist on the Highest Standards",
+            "questions": [
+                {
+                    "id": "hs_q1",
+                    "question": "Amazon's standards are described as:",
+                    "options": [
+                        "Reasonable and achievable",
+                        "Average for the industry",
+                        "Relentlessly high - perhaps unreasonably high",
+                        "Flexible depending on circumstances"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hs_q2",
+                    "question": "Why is setting high standards described as 'highly leveraged'?",
+                    "options": [
+                        "It saves money",
+                        "People in meetings you're in can take those standards to meetings you can't attend",
+                        "It reduces workload",
+                        "It eliminates the need for training"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hs_q3",
+                    "question": "During the pandemic, what happened to standards at many companies?",
+                    "options": [
+                        "They increased significantly",
+                        "They had to be relaxed, and now companies are fighting to get back to high standards",
+                        "They stayed exactly the same",
+                        "Standards became irrelevant"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hs_q4",
+                    "question": "What leads to better results according to this principle?",
+                    "options": [
+                        "Lower expectations to avoid disappointment",
+                        "Medium expectations for balance",
+                        "Higher expectations",
+                        "No expectations"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hs_q5",
+                    "question": "Why is it essential to maintain high standards in today's age?",
+                    "options": [
+                        "Regulations require it",
+                        "It's easy for customers to switch, and the internet gives them good information",
+                        "Competitors don't have standards",
+                        "It's a legal requirement"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hs_q6",
+                    "question": "Leaders should ensure that:",
+                    "options": [
+                        "Defects are acceptable if caught later",
+                        "Problems are fixed temporarily",
+                        "Defects don't get sent down the line and problems stay fixed",
+                        "Quality is someone else's responsibility"
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        {
+            "section": "Think Big",
+            "questions": [
+                {
+                    "id": "tb_q1",
+                    "question": "'Thinking small is a self-fulfilling prophecy' means:",
+                    "options": [
+                        "Small goals are easier to achieve",
+                        "If you think small, you'll only achieve small things",
+                        "Small thinking is sometimes appropriate",
+                        "Small companies should think smaller"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "tb_q2",
+                    "question": "What does 'looking around corners' mean?",
+                    "options": [
+                        "Being physically aware of your surroundings",
+                        "Anticipating future customer needs and technology changes",
+                        "Avoiding obstacles",
+                        "Following competitors exactly"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "tb_q3",
+                    "question": "Amazon's progression from multi-day delivery to same-day to potentially drone delivery (hours) demonstrates:",
+                    "options": [
+                        "Following industry standards",
+                        "Incremental thinking",
+                        "Thinking big and constantly raising the bar",
+                        "Reacting to competitors only"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "tb_q4",
+                    "question": "If you want to build a company that lasts over 100 years, you:",
+                    "options": [
+                        "Run the same playbook for decades",
+                        "Avoid taking risks",
+                        "Cannot run the same playbook for decades - you must change and take risks",
+                        "Focus only on current customers"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "tb_q5",
+                    "question": "Bold initiatives like reinventing healthcare require:",
+                    "options": [
+                        "Avoiding risks",
+                        "Thinking big and accepting they're not simple to do",
+                        "Only focusing on profitable areas",
+                        "Waiting for someone else to try first"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "tb_q6",
+                    "question": "Leaders who think big should:",
+                    "options": [
+                        "Keep their vision to themselves",
+                        "Create and communicate a bold direction that inspires results",
+                        "Wait until the bold idea is fully proven",
+                        "Only share ideas with senior leadership"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Bias for Action",
+            "questions": [
+                {
+                    "id": "ba_q1",
+                    "question": "Speed matters in business:",
+                    "options": [
+                        "Only for startups",
+                        "Only for small companies",
+                        "At every stage, in every industry, at every size (except monopolies)",
+                        "Only when competitors are fast"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "ba_q2",
+                    "question": "What is a 'two-way door' decision?",
+                    "options": [
+                        "A decision that requires extensive study",
+                        "A decision that can be easily reversed if wrong",
+                        "A decision that can never be changed",
+                        "A decision that requires CEO approval"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ba_q3",
+                    "question": "Most decisions at Amazon are:",
+                    "options": [
+                        "One-way door decisions requiring careful analysis",
+                        "Two-way door decisions that should be made quickly",
+                        "Never reversible",
+                        "Made only by senior leadership"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ba_q4",
+                    "question": "The concept of 'closing windows' means:",
+                    "options": [
+                        "Office temperature control",
+                        "Opportunities are time-limited and competitors are racing for them too",
+                        "Closing down projects",
+                        "Reducing scope"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ba_q5",
+                    "question": "Is speed preordained by company size or culture?",
+                    "options": [
+                        "Yes, large companies can't be fast",
+                        "Yes, certain industries are inherently slow",
+                        "No, speed is a leadership and culture decision",
+                        "Yes, compliance concerns always slow things down"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "ba_q6",
+                    "question": "Is there tension between 'highest standards' and 'bias for action'?",
+                    "options": [
+                        "No, they're the same thing",
+                        "Yes, but you can be fast while still having high standards",
+                        "Yes, and you must always choose one over the other",
+                        "No, standards don't affect speed"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ba_q7",
+                    "question": "Amazon should think of itself as:",
+                    "options": [
+                        "A large, established company",
+                        "The world's biggest startup",
+                        "A government-like organization",
+                        "A company too big to move fast"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Frugality",
+            "questions": [
+                {
+                    "id": "fr_q1",
+                    "question": "Amazon has 'door desks' as a signal that:",
+                    "options": [
+                        "The company is poor",
+                        "The company wants to be scrappy and avoid extra garnishing",
+                        "Real desks are unavailable",
+                        "It's a temporary measure"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "fr_q2",
+                    "question": "'Constraints breed resourcefulness' means:",
+                    "options": [
+                        "Having unlimited resources is best",
+                        "Limitations force creative, inventive solutions",
+                        "Constraints should be removed",
+                        "Large teams perform better"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "fr_q3",
+                    "question": "AWS's S3 and EC2 were built with teams of:",
+                    "options": [
+                        "Hundreds of engineers",
+                        "50 engineers each",
+                        "13 people each",
+                        "External contractors"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "fr_q4",
+                    "question": "When someone says 'It's only $100 million,' this represents:",
+                    "options": [
+                        "Good perspective on large numbers",
+                        "Being numb to numbers - a dangerous mindset",
+                        "Appropriate frugality",
+                        "Strong financial awareness"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "fr_q5",
+                    "question": "How should savings from frugality be used?",
+                    "options": [
+                        "Executive bonuses",
+                        "Office improvements",
+                        "Given back to customers as lower prices and more capabilities",
+                        "Kept as profit only"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "fr_q6",
+                    "question": "The best way to build your career is:",
+                    "options": [
+                        "To build large teams",
+                        "To request big budgets",
+                        "To build amazing experiences as leanly as possible",
+                        "To spend generously on resources"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "fr_q7",
+                    "question": "'There are no extra points for' what, according to Frugality?",
+                    "options": [
+                        "Innovation",
+                        "Customer satisfaction",
+                        "Growing headcount, budget size, or fixed expense",
+                        "Delivering results"
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        {
+            "section": "Earn Trust",
+            "questions": [
+                {
+                    "id": "et_q1",
+                    "question": "Earn Trust does NOT mean:",
+                    "options": [
+                        "Being honest and authentic",
+                        "Avoiding challenges to maintain social harmony",
+                        "Delivering what you said you would",
+                        "Being vocally self-critical"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "et_q2",
+                    "question": "'Leaders do not believe their own body odor smells of perfume' means:",
+                    "options": [
+                        "Personal hygiene is important",
+                        "Leaders should be self-aware and self-critical, not blind to their own faults",
+                        "Leaders should use perfume",
+                        "Leaders are always right"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "et_q3",
+                    "question": "If something you own isn't going well, you should:",
+                    "options": [
+                        "Hide it until you fix it",
+                        "Blame external factors",
+                        "Own it, say it's not going well, be self-critical, and fix it",
+                        "Transfer ownership to someone else"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "et_q4",
+                    "question": "Using data and benchmarking is important because:",
+                    "options": [
+                        "It proves you're always right",
+                        "It shows whether you're actually as good as you claim",
+                        "It's required by management",
+                        "It makes presentations longer"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "et_q5",
+                    "question": "In the story about the presentation with wrong numbers, what was the valuable lesson?",
+                    "options": [
+                        "Never make presentations",
+                        "Dive deep and have ownership over your details",
+                        "Always blame the data team",
+                        "Don't present to executives"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "et_q6",
+                    "question": "Challenging someone respectfully in a meeting is:",
+                    "options": [
+                        "A sign of distrust",
+                        "Part of earning trust through honest discourse",
+                        "Always inappropriate",
+                        "Only acceptable for senior leaders"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Dive Deep",
+            "questions": [
+                {
+                    "id": "dd_q1",
+                    "question": "Is there tension between Think Big (strategic) and Dive Deep (details)?",
+                    "options": [
+                        "No, they're unrelated",
+                        "Yes, but Amazon expects leaders to be great at BOTH",
+                        "Yes, so you must choose one",
+                        "No, details don't matter if strategy is right"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dd_q2",
+                    "question": "Why is the narrative format useful compared to PowerPoint?",
+                    "options": [
+                        "It's shorter",
+                        "It's harder to fake the details in a narrative",
+                        "It's easier to present",
+                        "It requires less preparation"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dd_q3",
+                    "question": "When metrics look good but you hear a customer anecdote about a problem, you should:",
+                    "options": [
+                        "Ignore the anecdote - metrics are truth",
+                        "Follow the anecdote because problems may not show in broad metrics at scale",
+                        "Wait for more complaints",
+                        "Assume the customer is wrong"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dd_q4",
+                    "question": "At Amazon's scale, even a 0.5% impact affects:",
+                    "options": [
+                        "A few hundred people",
+                        "A few thousand people",
+                        "Millions of people",
+                        "No one significant"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "dd_q5",
+                    "question": "'No task is beneath' a leader means:",
+                    "options": [
+                        "Leaders should only do strategic work",
+                        "Leaders should be willing to do any task needed to get things right",
+                        "Leaders should delegate everything",
+                        "Details are for junior people"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dd_q6",
+                    "question": "Good leaders find mechanisms to:",
+                    "options": [
+                        "Avoid details entirely",
+                        "Delegate all auditing",
+                        "Inspect and audit the details",
+                        "Trust that everything is fine"
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        {
+            "section": "Have Backbone; Disagree and Commit",
+            "questions": [
+                {
+                    "id": "hb_q1",
+                    "question": "At Amazon, speaking up when you think something is wrong is:",
+                    "options": [
+                        "Discouraged to maintain harmony",
+                        "Only for senior leaders",
+                        "Expected from everyone regardless of level",
+                        "Risky for your career"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hb_q2",
+                    "question": "'I told you so' is useless at Amazon because:",
+                    "options": [
+                        "It's rude",
+                        "It means you either didn't speak up when you should have, or you're not fully committing",
+                        "Amazon doesn't allow that phrase",
+                        "Leaders are always right"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hb_q3",
+                    "question": "Social cohesion (compromising to get along) is:",
+                    "options": [
+                        "The goal of all meetings",
+                        "Something to avoid - truth-seeking is more important",
+                        "The Amazon way",
+                        "Required for teamwork"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hb_q4",
+                    "question": "If two people disagree (one says ceiling is 10ft, other says 14ft), compromise to 12ft is:",
+                    "options": [
+                        "The best solution",
+                        "Usually wrong - there's a truth that's closer to one answer",
+                        "Required for teamwork",
+                        "How all disagreements should be resolved"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "hb_q5",
+                    "question": "After a decision is made and you were on the losing side, you should:",
+                    "options": [
+                        "Continue to argue your point",
+                        "Sabotage the decision subtly",
+                        "Commit wholly to the decision even though you disagreed",
+                        "Wait for the decision to fail to prove you were right"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "hb_q6",
+                    "question": "Why is full commitment after disagreement important?",
+                    "options": [
+                        "It's not that important",
+                        "Because businesses need to move and can't be stagnant with ongoing debates",
+                        "To please management",
+                        "It's a rule"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Deliver Results",
+            "questions": [
+                {
+                    "id": "dr_q1",
+                    "question": "Why is Deliver Results positioned as the final, crucial principle?",
+                    "options": [
+                        "It's alphabetical",
+                        "Because if you fail on delivery, nothing else matters",
+                        "It's less important than others",
+                        "It's a new principle"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dr_q2",
+                    "question": "What's the difference between outputs and inputs?",
+                    "options": [
+                        "They're the same thing",
+                        "Outputs are high-level results; inputs are the initiatives that drive those results",
+                        "Inputs are the final metrics",
+                        "Outputs can be directly managed"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dr_q3",
+                    "question": "Can you actively affect outputs by watching them on a monitor?",
+                    "options": [
+                        "Yes, monitoring changes outcomes",
+                        "No, you manage inputs which then affect outputs",
+                        "Yes, awareness improves metrics",
+                        "Monitoring is the most important activity"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dr_q4",
+                    "question": "Launch (delivery) is described as:",
+                    "options": [
+                        "The finish line",
+                        "The end of the project",
+                        "The starting line - where you can now build something meaningful",
+                        "When the team can relax"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "dr_q5",
+                    "question": "How do successful products typically develop at Amazon?",
+                    "options": [
+                        "They're breakaway hits on first launch",
+                        "They require 7-8 iterations before becoming meaningful",
+                        "They succeed immediately or are killed",
+                        "No iteration is needed"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "dr_q6",
+                    "question": "The best teams are characterized by:",
+                    "options": [
+                        "Perfect first launches",
+                        "Fast and organized launching, then constant iteration",
+                        "Slow but careful development",
+                        "Large team sizes"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Strive to be Earth's Best Employer",
+            "questions": [
+                {
+                    "id": "eb_q1",
+                    "question": "What makes a company a great place to work according to this principle?",
+                    "options": [
+                        "Highest salaries only",
+                        "Easiest work possible",
+                        "Meaningful mission, scale, invention, smart colleagues, and long-term commitment",
+                        "Flexible hours only"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "eb_q2",
+                    "question": "Leaders should ask themselves about their employees:",
+                    "options": [
+                        "Only 'are they hitting their numbers?'",
+                        "Are they growing? Are they empowered? Are they ready for what's next?",
+                        "Only 'are they loyal to the company?'",
+                        "Only 'are they working long hours?'"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "eb_q3",
+                    "question": "Leaders must have a vision for employees' personal success:",
+                    "options": [
+                        "Only at Amazon",
+                        "Whether that success is at Amazon or elsewhere",
+                        "Only for top performers",
+                        "Only for managers"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "eb_q4",
+                    "question": "Can Amazon do everything every employee wants?",
+                    "options": [
+                        "Yes, being Earth's best employer means doing everything",
+                        "No, the company can't be all things to everyone",
+                        "Only for senior employees",
+                        "Yes, if asked nicely"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "eb_q5",
+                    "question": "Which is NOT mentioned as an inspiring aspect of working at Amazon?",
+                    "options": [
+                        "Making customers' lives easier at large scale",
+                        "Willingness to invent and invest",
+                        "Guaranteed job security forever",
+                        "Working with smart, passionate teammates"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "id": "eb_q6",
+                    "question": "Areas for continued improvement include:",
+                    "options": [
+                        "Nothing - Amazon is already perfect",
+                        "Safety, manager training, diversity and inclusion",
+                        "Only compensation",
+                        "Only office amenities"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        {
+            "section": "Success and Scale Bring Broad Responsibility",
+            "questions": [
+                {
+                    "id": "ss_q1",
+                    "question": "The key question Amazon must constantly ask is:",
+                    "options": [
+                        "How can we grow faster?",
+                        "Are the communities where we operate better off because we're there?",
+                        "How can we reduce costs further?",
+                        "How can we beat competitors?"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ss_q2",
+                    "question": "Amazon's contribution to communities includes:",
+                    "options": [
+                        "Only jobs",
+                        "Jobs plus affordable housing, food security, education, and disaster relief",
+                        "Only taxes",
+                        "Only products"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ss_q3",
+                    "question": "Amazon's unique approach to homelessness includes:",
+                    "options": [
+                        "Donating money only",
+                        "Housing families overnight in corporate buildings (Mary's Place partnership)",
+                        "Ignoring the issue",
+                        "Relocating homeless away from offices"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ss_q4",
+                    "question": "'Leaders create more than they consume' means:",
+                    "options": [
+                        "Eating less at company events",
+                        "Leaving things better than how you found them",
+                        "Using fewer office supplies",
+                        "Working fewer hours"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ss_q5",
+                    "question": "Why did Amazon wait to be more involved in communities?",
+                    "options": [
+                        "They didn't care about communities",
+                        "They waited until they were profitable to have sustainable impact",
+                        "It wasn't allowed",
+                        "Communities didn't want their help"
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "id": "ss_q6",
+                    "question": "'We must be humble and thoughtful about even secondary effects of our actions' reflects:",
+                    "options": [
+                        "Being overly cautious",
+                        "Recognizing that being big means broader responsibility for impact",
+                        "Avoiding action entirely",
+                        "Only focusing on primary customers"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        }
+    ]
+}

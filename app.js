@@ -1,5 +1,5 @@
 // ==========================================
-// Queazy - CSP Practice Quiz Application
+// Queazy - Amazon Behavioral Interview Quiz
 // ==========================================
 
 class QuizApp {
@@ -56,7 +56,7 @@ class QuizApp {
 
     async loadQuizData() {
         try {
-            const response = await fetch('csp_questions.json');
+            const response = await fetch('amazon_questions.json');
             this.quizData = await response.json();
             this.renderSections();
         } catch (error) {
