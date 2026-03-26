@@ -1,0 +1,380 @@
+{
+  "lecture": "Lecture 4",
+  "title": "IT Project Scope Management",
+  "mcq": [
+    {
+      "question": "Project Scope Management is defined as:",
+      "options": ["Managing the project budget", "Defining and controlling what is or is not included in a project", "Managing the project timeline", "Hiring project team members"],
+      "answer": "B",
+      "explanation": "Project scope management is about defining and controlling what is or is not included in a project."
+    },
+    {
+      "question": "How many processes are in Scope Management?",
+      "options": ["4", "5", "6", "7"],
+      "answer": "C",
+      "explanation": "There are 6 processes: Planning Scope, Collecting Requirements, Defining Scope, Creating WBS, Validating Scope, and Controlling Scope."
+    },
+    {
+      "question": "A Requirements Traceability Matrix (RTM) is:",
+      "options": ["A budget tool", "A table listing requirements and their status", "A Gantt chart variant", "A network diagram"],
+      "answer": "B",
+      "explanation": "RTM is a table that lists requirements, their attributes, and status to ensure all are addressed."
+    },
+    {
+      "question": "The Scope Statement must include:",
+      "options": ["Team member resumes", "Scope description, deliverables, and acceptance criteria", "Marketing strategy", "Revenue projections"],
+      "answer": "B",
+      "explanation": "Scope statements must include scope description, project deliverables, and acceptance criteria."
+    },
+    {
+      "question": "WBS stands for:",
+      "options": ["Work Billing System", "Work Breakdown Structure", "Workflow Base Schedule", "Wide Business Strategy"],
+      "answer": "B",
+      "explanation": "WBS (Work Breakdown Structure) subdivides deliverables into smaller, manageable components."
+    },
+    {
+      "question": "Decomposition in WBS means:",
+      "options": ["Deleting tasks", "Subdividing deliverables into smaller components", "Combining multiple projects", "Removing team members"],
+      "answer": "B",
+      "explanation": "Decomposition is the process of subdividing project deliverables into smaller, more manageable components."
+    },
+    {
+      "question": "Which WBS approach starts with the largest items and breaks them down?",
+      "options": ["Bottom-up approach", "Top-down approach", "Analogy approach", "Mind-mapping approach"],
+      "answer": "B",
+      "explanation": "The top-down approach starts with the largest items of the project and breaks them down into smaller tasks."
+    },
+    {
+      "question": "Which WBS approach reviews similar past projects?",
+      "options": ["Top-down approach", "Bottom-up approach", "Analogy approach", "Guidelines approach"],
+      "answer": "C",
+      "explanation": "The analogy approach reviews WBSs of similar projects and tailors them to the current project."
+    },
+    {
+      "question": "A WBS Dictionary describes:",
+      "options": ["Project team bios", "Detailed information about each WBS item", "Financial forecasts", "Risk categories"],
+      "answer": "B",
+      "explanation": "A WBS dictionary is a document that describes detailed information about each WBS item."
+    },
+    {
+      "question": "A work package is:",
+      "options": ["The entire project", "A task at the lowest level of the WBS", "A project milestone", "A meeting agenda"],
+      "answer": "B",
+      "explanation": "A work package is a task at the lowest (most detailed) level of the WBS."
+    },
+    {
+      "question": "The Scope Baseline includes:",
+      "options": ["Only the scope statement", "Approved scope statement, WBS, and WBS dictionary", "Budget and timeline only", "Risk register only"],
+      "answer": "B",
+      "explanation": "The scope baseline includes the approved project scope statement, its associated WBS, and WBS dictionary."
+    },
+    {
+      "question": "Validating Scope involves:",
+      "options": ["Estimating costs", "Formal acceptance of project deliverables by the customer", "Writing code", "Hiring vendors"],
+      "answer": "B",
+      "explanation": "Validating scope is the formal acceptance of project deliverables, achieved by customer inspection."
+    },
+    {
+      "question": "Controlling Scope means:",
+      "options": ["Adding features without approval", "Controlling changes to project scope throughout the project life", "Ignoring change requests", "Reducing the team size"],
+      "answer": "B",
+      "explanation": "Controlling scope means controlling changes to project scope throughout the life of the project."
+    },
+    {
+      "question": "Which is NOT a method for collecting requirements?",
+      "options": ["Interviewing", "Benchmarking", "Budget allocation", "Prototyping"],
+      "answer": "C",
+      "explanation": "Methods include interviewing, focus groups, questionnaires, observation, prototyping, and benchmarking. Budget allocation is not one."
+    },
+    {
+      "question": "Requirements should be collected using an iterative approach because:",
+      "options": ["They are always clearly defined from the start", "They are often unclear early in a project", "Iteration is cheaper", "It reduces team size"],
+      "answer": "B",
+      "explanation": "An iterative approach is recommended because requirements are often unclear early in a project."
+    },
+    {
+      "question": "The scope statement CAN also include:",
+      "options": ["Team salaries", "Project boundaries, constraints, and assumptions", "Employee vacation schedules", "Office layout plans"],
+      "answer": "B",
+      "explanation": "The scope statement can additionally include project boundaries, constraints, and assumptions."
+    },
+    {
+      "question": "The Bottom-up WBS approach:",
+      "options": ["Starts with the biggest items first", "Starts with specific tasks and rolls them up", "Only uses pre-existing templates", "Ignores task details"],
+      "answer": "B",
+      "explanation": "The bottom-up approach starts with specific tasks and rolls them up into higher-level categories."
+    },
+    {
+      "question": "Mind-mapping for WBS uses:",
+      "options": ["Financial charts", "Branches radiating from a core idea to structure thoughts", "Only spreadsheets", "Database queries"],
+      "answer": "B",
+      "explanation": "Mind-mapping uses branches radiating out from a core idea to structure thoughts and ideas."
+    },
+    {
+      "question": "Planning Scope determines:",
+      "options": ["Team member roles", "How the project's scope and requirements will be managed", "The project budget", "The marketing strategy"],
+      "answer": "B",
+      "explanation": "Planning scope determines how the project's scope and requirements will be managed."
+    },
+    {
+      "question": "Customer inspection is associated with which scope process?",
+      "options": ["Planning Scope", "Defining Scope", "Validating Scope", "Controlling Scope"],
+      "answer": "C",
+      "explanation": "Validating scope involves formal acceptance of deliverables achieved by customer inspection."
+    },
+    {
+      "question": "Which process occurs during the Monitoring & Controlling phase?",
+      "options": ["Planning Scope and Collecting Requirements", "Creating WBS", "Validating Scope and Controlling Scope", "Defining Scope"],
+      "answer": "C",
+      "explanation": "Validating Scope and Controlling Scope occur during the Monitoring & Controlling phase."
+    },
+    {
+      "question": "Scope creep refers to:",
+      "options": ["Properly controlled scope changes", "Uncontrolled changes or additions to project scope", "Reducing project scope", "Completing the project ahead of schedule"],
+      "answer": "B",
+      "explanation": "Scope creep refers to uncontrolled changes or continuous additions to project scope without proper approval."
+    },
+    {
+      "question": "Focus groups as a requirements collection method involve:",
+      "options": ["Sending emails to stakeholders", "Group discussions to explore requirements", "Automated data collection", "Solo interviews"],
+      "answer": "B",
+      "explanation": "Focus groups bring together stakeholders for group discussions to explore and clarify requirements."
+    },
+    {
+      "question": "The Guidelines approach to WBS development uses:",
+      "options": ["Previous project WBSs", "Organizational guidelines for preparing WBSs", "Random brainstorming", "Financial models"],
+      "answer": "B",
+      "explanation": "Some organizations provide guidelines for preparing WBSs that teams can follow."
+    },
+    {
+      "question": "Acceptance criteria in a scope statement defines:",
+      "options": ["How much the project costs", "The conditions that must be met for deliverables to be accepted", "The number of team members needed", "The project timeline"],
+      "answer": "B",
+      "explanation": "Acceptance criteria defines the conditions that must be met for deliverables to be formally accepted."
+    },
+    {
+      "question": "Which WBS approach is most creative and visual?",
+      "options": ["Top-down", "Bottom-up", "Analogy", "Mind-mapping"],
+      "answer": "D",
+      "explanation": "Mind-mapping is the most creative and visual approach, using branches from a core idea."
+    },
+    {
+      "question": "Observation as a requirements method involves:",
+      "options": ["Reading documentation", "Watching how users currently work and interact with systems", "Sending surveys", "Group voting"],
+      "answer": "B",
+      "explanation": "Observation involves watching how users currently work to understand their real requirements."
+    },
+    {
+      "question": "Benchmarking compares the current project with:",
+      "options": ["Only internal projects", "Other similar projects or industry standards", "Only competitor products", "Nothing — it's a standalone exercise"],
+      "answer": "B",
+      "explanation": "Benchmarking compares the current project with other similar projects or industry standards."
+    },
+    {
+      "question": "Planning scope may consider whether to use:",
+      "options": ["Only Gantt charts", "Product backlog or requirements statement at start", "No planning tools at all", "Only financial tools"],
+      "answer": "B",
+      "explanation": "Planning scope determines the approach, such as using a product backlog or requirements statement at the start."
+    },
+    {
+      "question": "The first four scope management processes occur during:",
+      "options": ["Monitoring & Controlling", "Planning", "Closing", "Initiating"],
+      "answer": "B",
+      "explanation": "Planning Scope, Collecting Requirements, Defining Scope, and Creating WBS all occur during the Planning phase."
+    }
+  ],
+  "trueFalse": [
+    {
+      "statement": "Project scope management defines and controls what is or is not included in a project.",
+      "answer": true,
+      "justification": "This is the exact definition of project scope management."
+    },
+    {
+      "statement": "A WBS is a flat, non-hierarchical list of tasks.",
+      "answer": false,
+      "justification": "A WBS is a hierarchical breakdown — it subdivides deliverables into smaller components through decomposition."
+    },
+    {
+      "statement": "Requirements are always clear from the beginning of a project.",
+      "answer": false,
+      "justification": "Requirements are often unclear early in a project, which is why an iterative approach to defining them is recommended."
+    },
+    {
+      "statement": "The Scope Baseline includes the approved scope statement, WBS, and WBS dictionary.",
+      "answer": true,
+      "justification": "The scope baseline consists of three components: approved scope statement, WBS, and WBS dictionary."
+    },
+    {
+      "statement": "Validating Scope is done by internal team review only.",
+      "answer": false,
+      "justification": "Validating scope requires formal acceptance through customer inspection, not just internal review."
+    },
+    {
+      "statement": "Controlling Scope happens only at the end of the project.",
+      "answer": false,
+      "justification": "Controlling scope happens throughout the life of the project, not just at the end."
+    },
+    {
+      "statement": "A WBS Dictionary provides detailed information about each WBS item.",
+      "answer": true,
+      "justification": "The WBS dictionary describes detailed information about each WBS item."
+    },
+    {
+      "statement": "The top-down approach to WBS starts with specific tasks and rolls them up.",
+      "answer": false,
+      "justification": "The top-down approach starts with the largest items and breaks them down. Bottom-up starts with specific tasks."
+    },
+    {
+      "statement": "Scope statement must include scope description, deliverables, and acceptance criteria.",
+      "answer": true,
+      "justification": "These three elements are required in every scope statement."
+    },
+    {
+      "statement": "Mind-mapping is an approach to develop a WBS.",
+      "answer": true,
+      "justification": "Mind-mapping is one of 5 approaches to WBS development, using branches from a core idea."
+    },
+    {
+      "statement": "A work package is the highest level of the WBS.",
+      "answer": false,
+      "justification": "A work package is a task at the lowest (most detailed) level of the WBS, not the highest."
+    },
+    {
+      "statement": "Requirements Traceability Matrix ensures all requirements are addressed.",
+      "answer": true,
+      "justification": "RTM lists requirements with their attributes and status to ensure all requirements are properly addressed."
+    },
+    {
+      "statement": "Benchmarking is a method for collecting requirements.",
+      "answer": true,
+      "justification": "Benchmarking (comparing with other projects) is one of the methods for collecting requirements."
+    },
+    {
+      "statement": "The analogy approach creates a WBS from scratch without reference to past projects.",
+      "answer": false,
+      "justification": "The analogy approach specifically reviews WBSs of similar past projects and tailors them."
+    },
+    {
+      "statement": "Scope creep is a controlled process for managing changes.",
+      "answer": false,
+      "justification": "Scope creep refers to UNCONTROLLED changes or additions to project scope — it's something to be prevented."
+    },
+    {
+      "statement": "Questionnaires and surveys can be used to collect requirements.",
+      "answer": true,
+      "justification": "Questionnaires and surveys are listed as valid methods for collecting requirements."
+    },
+    {
+      "statement": "Decomposition means combining small tasks into larger ones.",
+      "answer": false,
+      "justification": "Decomposition means subdividing deliverables into SMALLER components, not combining them."
+    },
+    {
+      "statement": "There are 5 approaches to developing a WBS.",
+      "answer": true,
+      "justification": "The 5 approaches are: Guidelines, Analogy, Top-down, Bottom-up, and Mind-mapping."
+    },
+    {
+      "statement": "Constraints and assumptions can be included in the scope statement.",
+      "answer": true,
+      "justification": "The scope statement can optionally include project boundaries, constraints, and assumptions."
+    },
+    {
+      "statement": "Prototyping cannot be used as a method for collecting requirements.",
+      "answer": false,
+      "justification": "Prototyping is specifically listed as one of the methods for collecting requirements."
+    },
+    {
+      "statement": "Validating scope and Controlling scope both occur during Monitoring and Controlling.",
+      "answer": true,
+      "justification": "Both processes are part of the Monitoring and Controlling phase."
+    },
+    {
+      "statement": "The bottom-up approach starts with the biggest project items.",
+      "answer": false,
+      "justification": "Bottom-up starts with specific tasks and rolls them up. Top-down starts with the biggest items."
+    },
+    {
+      "statement": "Planning scope determines how scope and requirements will be managed.",
+      "answer": true,
+      "justification": "Planning scope is about determining how the project's scope and requirements will be managed."
+    },
+    {
+      "statement": "The WBS only works with the top-down approach.",
+      "answer": false,
+      "justification": "WBS can be developed using 5 different approaches: guidelines, analogy, top-down, bottom-up, and mind-mapping."
+    },
+    {
+      "statement": "Interviewing is NOT a valid method for collecting requirements.",
+      "answer": false,
+      "justification": "Interviewing is one of the primary methods for collecting requirements from stakeholders."
+    },
+    {
+      "statement": "Scope management processes are the same in the Planning and Monitoring phases.",
+      "answer": false,
+      "justification": "Planning has 4 processes (Plan, Collect, Define, Create WBS) while Monitoring has 2 (Validate, Control)."
+    },
+    {
+      "statement": "Group decision-making techniques can help collect requirements.",
+      "answer": true,
+      "justification": "Group and decision-making techniques are listed as valid methods for requirements collection."
+    },
+    {
+      "statement": "The scope baseline is established before work begins and serves as a reference.",
+      "answer": true,
+      "justification": "The scope baseline is established during planning and serves as the reference point for scope control."
+    },
+    {
+      "statement": "Acceptance criteria is optional in the scope statement.",
+      "answer": false,
+      "justification": "Acceptance criteria is a must-include element in the scope statement, along with scope description and deliverables."
+    },
+    {
+      "statement": "Customer inspection is the method used for validating scope.",
+      "answer": true,
+      "justification": "Formal acceptance of deliverables is achieved through customer inspection."
+    }
+  ],
+  "openEnded": [
+    {
+      "question": "Explain the 6 processes of IT Project Scope Management and when each occurs.",
+      "answer": "During Planning: 1) Planning Scope — determines how scope and requirements will be managed. 2) Collecting Requirements — uses iterative methods (interviews, surveys, prototyping, etc.) and creates RTM. 3) Defining Scope — creates the scope statement with description, deliverables, and acceptance criteria. 4) Creating WBS — decomposes deliverables into smaller components using one of 5 approaches. During Monitoring & Controlling: 5) Validating Scope — formal acceptance of deliverables through customer inspection. 6) Controlling Scope — controlling changes to scope throughout the project life."
+    },
+    {
+      "question": "Compare and contrast the 5 approaches to developing a WBS.",
+      "answer": "1) Guidelines: Uses organizational templates and standards for WBS preparation. Best when the organization has established practices. 2) Analogy: Reviews WBSs from similar past projects and tailors them. Best when similar projects have been done before. 3) Top-down: Starts with the largest items and breaks them into smaller pieces. Best for well-understood projects. 4) Bottom-up: Starts with specific tasks and rolls them up into categories. Best when team has detailed knowledge of tasks. 5) Mind-mapping: Uses visual branches from a core idea. Best for creative brainstorming and complex projects."
+    },
+    {
+      "question": "What is the Requirements Traceability Matrix (RTM) and why is it important?",
+      "answer": "The RTM is a table that lists requirements, various attributes of each requirement, and the status of the requirements. It ensures that all requirements are properly addressed throughout the project. It tracks each requirement from its origin through design, implementation, and testing, providing traceability. This is important because it prevents requirements from being overlooked, helps manage changes, and ensures deliverables align with stakeholder needs."
+    },
+    {
+      "question": "Explain the difference between the scope statement and the scope baseline.",
+      "answer": "The scope statement is a document that defines project objectives, deliverables, and acceptance criteria. It may also include boundaries, constraints, and assumptions. The scope baseline is broader — it includes the approved scope statement PLUS the associated WBS and WBS dictionary. The baseline serves as the official reference point against which all scope changes are measured during the Controlling Scope process."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Managing Scope for a Mobile Banking App",
+      "scenario": "A bank is developing a mobile banking app. The initial scope includes: account balance checking, money transfers, bill payments, and customer support chat. During development, the marketing team requests adding: investment portfolio tracking, cryptocurrency trading, and a rewards program. The project has a fixed budget and a 6-month deadline.",
+      "questions": [
+        "Identify the original scope deliverables and the requested additions.",
+        "How should the project manager handle these change requests?",
+        "What is the risk of scope creep in this scenario?",
+        "How would you use a WBS to organize the original scope?"
+      ],
+      "analysis": "Original scope: account balance, transfers, bill payments, support chat. Additions: investment tracking, crypto trading, rewards program. The PM should use the Controlling Scope process: evaluate each change request against the scope baseline, assess impact on budget and timeline, and get formal approval before adding anything. Scope creep risk is HIGH — adding 3 major features to a fixed-budget, 6-month project could cause delays and cost overruns. WBS structure: Level 1: Mobile Banking App. Level 2: Account Management, Transactions, Support. Level 3 under Account: View Balance, Account Details, etc. Level 3 under Transactions: Transfer, Bill Pay. Level 3 under Support: Chat Interface, FAQ."
+    },
+    {
+      "title": "Requirements Collection for an Online Learning Platform",
+      "scenario": "A university wants to build an online learning platform but has only a vague idea of what they want: 'something that helps students learn better.' The project team needs to collect and define clear requirements from multiple stakeholder groups: professors (50+), students (10,000+), IT administrators, and university leadership.",
+      "questions": [
+        "Which requirements collection methods would you use for each stakeholder group and why?",
+        "How would you create an RTM for this project?",
+        "What should the scope statement include?",
+        "Which WBS approach would work best and why?"
+      ],
+      "analysis": "For professors: Focus groups (smaller group, can discuss teaching needs) and interviews (individual preferences). For students: Surveys/questionnaires (large population, need quantitative data) and prototyping (test UI concepts). For IT admins: Interviews (technical requirements, infrastructure constraints). For leadership: Interviews (strategic vision, budget constraints). RTM: Create a table with columns for requirement ID, description, source (stakeholder), priority, status, and deliverable link. Scope statement should include: scope description (online learning platform features), deliverables (course pages, assignment submission, grade viewing, video platform), acceptance criteria (performance benchmarks, user satisfaction targets). Mind-mapping approach works best due to the vague initial requirements — helps organize and expand ideas organically from the core concept."
+    }
+  ]
+}

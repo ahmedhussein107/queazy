@@ -1,0 +1,384 @@
+{
+  "lecture": "Lecture 5",
+  "title": "IT Project Time Management",
+  "mcq": [
+    {
+      "question": "Activity Definition involves:",
+      "options": ["Estimating costs", "Identifying specific activities to produce project deliverables", "Hiring team members", "Writing code"],
+      "answer": "B",
+      "explanation": "Activity Definition involves identifying the specific activities that the project team must perform to produce deliverables."
+    },
+    {
+      "question": "What does PERT stand for?",
+      "options": ["Project Evaluation and Review Technique", "Program Evaluation and Review Technique", "Process Estimation and Resource Tracking", "Planning Evaluation and Risk Testing"],
+      "answer": "B",
+      "explanation": "PERT stands for Program Evaluation and Review Technique."
+    },
+    {
+      "question": "The PERT formula is:",
+      "options": ["(O + M + P) / 3", "(O + 4M + P) / 6", "(O + 2M + P) / 4", "(O + P) / 2"],
+      "answer": "B",
+      "explanation": "PERT = (optimistic + 4 × most likely + pessimistic) / 6."
+    },
+    {
+      "question": "A milestone is:",
+      "options": ["A task with a long duration", "A significant event that normally has no duration", "A type of Gantt chart", "A cost estimate"],
+      "answer": "B",
+      "explanation": "A milestone is a significant event that normally has no duration — it marks a point in time."
+    },
+    {
+      "question": "The Finish-to-Start (FS) relationship means:",
+      "options": ["Both tasks start at the same time", "One task cannot start before the other finishes", "Both tasks must finish together", "One task cannot finish until the other starts"],
+      "answer": "B",
+      "explanation": "Finish-to-Start (FS) means one task cannot start before the other task finishes."
+    },
+    {
+      "question": "Start-to-Start (SS) means:",
+      "options": ["One must finish before the other starts", "Both tasks can start at the same time", "Both must finish at the same time", "Tasks are unrelated"],
+      "answer": "B",
+      "explanation": "Start-to-Start (SS) means both tasks can start at the same time."
+    },
+    {
+      "question": "The Critical Path is:",
+      "options": ["The shortest path through the network diagram", "The longest path through the network diagram", "The path with the most resources", "The cheapest path"],
+      "answer": "B",
+      "explanation": "The critical path is the longest path through the network diagram and determines minimum project duration."
+    },
+    {
+      "question": "Slack (float) is defined as:",
+      "options": ["Extra budget", "Time an activity may be delayed without delaying the project", "Number of team members", "Cost overrun"],
+      "answer": "B",
+      "explanation": "Slack or float is the time an activity may be delayed without delaying a succeeding activity or the project finish date."
+    },
+    {
+      "question": "The critical path has the:",
+      "options": ["Most slack", "Least slack or float", "Highest cost", "Fewest tasks"],
+      "answer": "B",
+      "explanation": "The critical path has the least amount of slack or float."
+    },
+    {
+      "question": "In a Gantt Chart, a black diamond represents:",
+      "options": ["A summary task", "A milestone", "A task duration", "A dependency"],
+      "answer": "B",
+      "explanation": "In a Gantt Chart, a black diamond symbol represents a milestone."
+    },
+    {
+      "question": "Thick black bars in a Gantt Chart represent:",
+      "options": ["Milestones", "Summary tasks", "Individual task durations", "Dependencies"],
+      "answer": "B",
+      "explanation": "Thick black bars in a Gantt Chart represent summary tasks."
+    },
+    {
+      "question": "An uncolored diamond in a Gantt Chart means:",
+      "options": ["A completed milestone", "A slipped milestone (delayed)", "A cancelled task", "A new task"],
+      "answer": "B",
+      "explanation": "An uncolored diamond represents a slipped milestone — one that has been delayed past its planned date."
+    },
+    {
+      "question": "Crashing a project means:",
+      "options": ["Cancelling the project", "Adding resources to shorten critical task durations for least cost", "Removing tasks", "Extending the deadline"],
+      "answer": "B",
+      "explanation": "Crashing means obtaining the greatest schedule compression for the least incremental cost by adding resources."
+    },
+    {
+      "question": "Fast tracking means:",
+      "options": ["Cancelling tasks", "Doing tasks in parallel or overlapping them", "Adding more team members", "Using faster computers"],
+      "answer": "B",
+      "explanation": "Fast tracking involves doing tasks in parallel or overlapping them to shorten the schedule."
+    },
+    {
+      "question": "Murphy's Law states:",
+      "options": ["Work expands to fill available time", "If something can go wrong, it will", "Projects always finish on time", "Buffers are unnecessary"],
+      "answer": "B",
+      "explanation": "Murphy's Law: 'If something can go wrong, it will.' The solution is to plan for delays."
+    },
+    {
+      "question": "Parkinson's Law states:",
+      "options": ["If something can go wrong, it will", "Work expands to fill the time available", "Projects never finish late", "Crashing always works"],
+      "answer": "B",
+      "explanation": "Parkinson's Law: 'Work expands to fill the time available.' The solution is shorter deadlines and progress monitoring."
+    },
+    {
+      "question": "Critical Chain Scheduling (CCS) addresses which concern?",
+      "options": ["Adding more tasks", "Avoiding wasted time by managing buffers", "Eliminating all milestones", "Ignoring resource constraints"],
+      "answer": "B",
+      "explanation": "CCS avoids wasted time by removing task-level buffers and adding project buffers and feeding buffers."
+    },
+    {
+      "question": "A Project Buffer in CCS is:",
+      "options": ["Extra time before each task", "Extra time added before the project deadline", "Extra budget", "Additional team members"],
+      "answer": "B",
+      "explanation": "A Project Buffer is extra time added before the project deadline to protect against delays."
+    },
+    {
+      "question": "A Feeding Buffer in CCS is:",
+      "options": ["Extra time after the project ends", "Extra time before critical path tasks from non-critical paths", "Extra budget for food", "A lunch break schedule"],
+      "answer": "B",
+      "explanation": "Feeding Buffers are extra time added before critical path tasks from non-critical (feeding) paths."
+    },
+    {
+      "question": "The Arrow Diagramming Method (ADM) uses:",
+      "options": ["Boxes for activities and arrows for relationships", "Arrows for activities and nodes for events", "Only Gantt charts", "No arrows at all"],
+      "answer": "B",
+      "explanation": "ADM (Activity-on-Arrow) uses arrows to represent activities and nodes for events."
+    },
+    {
+      "question": "The Precedence Diagramming Method (PDM) uses:",
+      "options": ["Arrows for activities", "Boxes for activities and arrows for relationships", "Only milestones", "No visual representation"],
+      "answer": "B",
+      "explanation": "PDM uses boxes for activities and arrows to show relationships, supporting different dependency types."
+    },
+    {
+      "question": "ADM only supports which type of dependency?",
+      "options": ["Start-to-Start", "Finish-to-Finish", "Finish-to-Start", "All types"],
+      "answer": "C",
+      "explanation": "ADM (Activity-on-Arrow) only supports Finish-to-Start (FS) relationships."
+    },
+    {
+      "question": "Three-Point Estimating uses which three estimates?",
+      "options": ["High, medium, low", "Optimistic, most likely, pessimistic", "Best case, worst case, average", "Fast, normal, slow"],
+      "answer": "B",
+      "explanation": "Three-Point Estimating uses optimistic, most likely, and pessimistic estimates."
+    },
+    {
+      "question": "Activity Resource Estimation involves:",
+      "options": ["Estimating task durations", "Estimating how many resources to use for activities", "Creating the project charter", "Defining the scope"],
+      "answer": "B",
+      "explanation": "Activity Resource Estimation involves estimating how many resources the project team should use."
+    },
+    {
+      "question": "Schedule Development compiles:",
+      "options": ["Only the budget", "Activity sequences, resource estimates, and duration estimates", "Only risk assessments", "Only stakeholder lists"],
+      "answer": "B",
+      "explanation": "Schedule Development compiles activity sequences, resource estimates, and duration estimates to create the project schedule."
+    },
+    {
+      "question": "Schedule Control involves:",
+      "options": ["Creating the initial schedule", "Controlling and managing changes to the project schedule", "Ignoring schedule changes", "Adding new projects"],
+      "answer": "B",
+      "explanation": "Schedule Control involves controlling and managing changes to the project schedule."
+    },
+    {
+      "question": "Using PERT with Optimistic=3, Most Likely=4, Pessimistic=5 weeks gives:",
+      "options": ["3.5 weeks", "4 weeks", "4.5 weeks", "5 weeks"],
+      "answer": "B",
+      "explanation": "PERT = (3 + 4×4 + 5) / 6 = (3 + 16 + 5) / 6 = 24/6 = 4 weeks."
+    },
+    {
+      "question": "If delays occur on the critical path, the project will:",
+      "options": ["Not be affected", "Be delayed unless managed", "Automatically shorten", "Always be cancelled"],
+      "answer": "B",
+      "explanation": "Delays on the critical path directly delay the project unless managed through crashing or fast tracking."
+    },
+    {
+      "question": "SMART criteria is associated with:",
+      "options": ["Budget management", "Milestone and activity definition", "Procurement planning", "Quality auditing"],
+      "answer": "B",
+      "explanation": "SMART criteria is used in activity definition to ensure milestones and activities are well-defined."
+    },
+    {
+      "question": "Finish-to-Finish (FF) means:",
+      "options": ["One cannot start before the other", "One cannot finish unless the other is complete", "Both start at the same time", "Both are independent"],
+      "answer": "B",
+      "explanation": "FF means one task cannot finish unless the other task is complete (e.g., testing cannot finish until coding is complete)."
+    }
+  ],
+  "trueFalse": [
+    {
+      "statement": "PERT uses the formula (optimistic + 4 × most likely + pessimistic) / 6.",
+      "answer": true,
+      "justification": "This is the correct PERT formula for estimating activity duration under uncertainty."
+    },
+    {
+      "statement": "The critical path is the shortest path through the network diagram.",
+      "answer": false,
+      "justification": "The critical path is the LONGEST path, determining the minimum project duration."
+    },
+    {
+      "statement": "A milestone normally has no duration.",
+      "answer": true,
+      "justification": "A milestone is a significant event that marks a point in time and normally has no duration."
+    },
+    {
+      "statement": "Slack is the time an activity can be delayed without affecting the project finish date.",
+      "answer": true,
+      "justification": "Slack (float) is the time an activity may be delayed without delaying succeeding activities or the project finish."
+    },
+    {
+      "statement": "Crashing involves cancelling tasks to shorten the schedule.",
+      "answer": false,
+      "justification": "Crashing involves adding more resources to critical tasks for the least incremental cost, not cancelling tasks."
+    },
+    {
+      "statement": "Fast tracking means doing tasks in parallel or overlapping them.",
+      "answer": true,
+      "justification": "Fast tracking shortens the schedule by performing tasks in parallel or overlapping them."
+    },
+    {
+      "statement": "Murphy's Law states 'Work expands to fill the time available.'",
+      "answer": false,
+      "justification": "That's Parkinson's Law. Murphy's Law states 'If something can go wrong, it will.'"
+    },
+    {
+      "statement": "ADM only supports Finish-to-Start dependencies.",
+      "answer": true,
+      "justification": "The Arrow Diagramming Method (ADM) only supports Finish-to-Start (FS) relationships."
+    },
+    {
+      "statement": "A Gantt Chart lists project activities with start and finish dates in calendar format.",
+      "answer": true,
+      "justification": "Gantt Charts list activities and their corresponding start and finish dates in a calendar format."
+    },
+    {
+      "statement": "The Precedence Diagramming Method can show different types of dependencies.",
+      "answer": true,
+      "justification": "PDM shows different types of dependencies (FS, SS, FF, SF) unlike ADM which only shows FS."
+    },
+    {
+      "statement": "A black diamond in a Gantt Chart represents a summary task.",
+      "answer": false,
+      "justification": "A black diamond represents a milestone. Thick black bars represent summary tasks."
+    },
+    {
+      "statement": "Critical Chain Scheduling adds buffers at the task level.",
+      "answer": false,
+      "justification": "CCS removes task-level buffers and instead adds Project Buffers and Feeding Buffers."
+    },
+    {
+      "statement": "Three-Point Estimating uses optimistic, most likely, and pessimistic estimates.",
+      "answer": true,
+      "justification": "Three-Point Estimating uses these three values instead of a single estimate."
+    },
+    {
+      "statement": "Parkinson's Law suggests setting shorter deadlines to combat time waste.",
+      "answer": true,
+      "justification": "Since work expands to fill available time, setting shorter deadlines and monitoring progress combats this."
+    },
+    {
+      "statement": "There can be more than one critical path in a project.",
+      "answer": true,
+      "justification": "If multiple paths have the same longest duration, they are all critical paths."
+    },
+    {
+      "statement": "The critical path can change over time as the project progresses.",
+      "answer": true,
+      "justification": "Updates and changes may shift the critical path as tasks progress and durations change."
+    },
+    {
+      "statement": "Schedule Control creates the initial project schedule.",
+      "answer": false,
+      "justification": "Schedule Development creates the initial schedule. Schedule Control manages changes to the schedule."
+    },
+    {
+      "statement": "Activity sequencing identifies relationships between project activities.",
+      "answer": true,
+      "justification": "Activity sequencing involves identifying and documenting the relationships between project activities."
+    },
+    {
+      "statement": "Start-to-Finish (SF) means one task cannot start until the other finishes.",
+      "answer": true,
+      "justification": "SF means one task cannot start until the other finishes (e.g., old version stays active until new version starts)."
+    },
+    {
+      "statement": "Lighter horizontal bars in a Gantt Chart represent milestones.",
+      "answer": false,
+      "justification": "Lighter horizontal bars represent task durations. Milestones are shown as diamonds."
+    },
+    {
+      "statement": "An uncolored diamond in a Gantt Chart means a slipped milestone.",
+      "answer": true,
+      "justification": "An uncolored diamond represents a milestone that has been delayed past its planned date."
+    },
+    {
+      "statement": "Feeding Buffers are placed before the project deadline.",
+      "answer": false,
+      "justification": "Project Buffers are placed before the deadline. Feeding Buffers are placed before critical path tasks from non-critical paths."
+    },
+    {
+      "statement": "Activity Definition involves developing a more detailed WBS.",
+      "answer": true,
+      "justification": "Activity definition involves developing a more detailed WBS by identifying specific activities."
+    },
+    {
+      "statement": "Network Diagrams focus on task dependencies and relationships.",
+      "answer": true,
+      "justification": "Network Diagrams focus on task dependencies and relationships between activities."
+    },
+    {
+      "statement": "Gantt Charts only support Finish-to-Start dependencies.",
+      "answer": false,
+      "justification": "Gantt Charts support ALL types of task dependencies (FS, SS, FF, SF)."
+    },
+    {
+      "statement": "Crashing is always cheaper than fast tracking.",
+      "answer": false,
+      "justification": "Crashing involves additional costs (adding resources). Fast tracking (parallelizing tasks) may be cheaper but carries more risk."
+    },
+    {
+      "statement": "Activity Resource Estimation determines how many resources are needed.",
+      "answer": true,
+      "justification": "Activity Resource Estimation estimates how many resources the project team should use for activities."
+    },
+    {
+      "statement": "The goal of Critical Chain Scheduling is to reduce multitasking and improve efficiency.",
+      "answer": true,
+      "justification": "CCS aims to reduce multitasking and improve efficiency by managing buffers strategically."
+    },
+    {
+      "statement": "A buffer is extra time added to complete a task.",
+      "answer": true,
+      "justification": "A buffer is extra time added to account for potential delays and uncertainties."
+    },
+    {
+      "statement": "Arrows in a Gantt Chart represent dependencies between tasks.",
+      "answer": true,
+      "justification": "In Gantt Charts, arrows show the dependencies and relationships between tasks."
+    }
+  ],
+  "openEnded": [
+    {
+      "question": "Explain the Critical Path Method (CPM) and how to calculate the critical path.",
+      "answer": "CPM is a network diagramming technique used to predict total project duration. Steps: 1) Create a Network Diagram showing task dependencies. 2) Estimate task durations for each activity. 3) Identify all possible paths through the network. 4) Calculate the duration of each path by summing task durations. 5) The longest path is the Critical Path — it determines minimum project duration. 6) Tasks on the critical path have zero or minimal slack. If multiple paths have the same longest duration, they are all critical. Delays on the critical path directly delay the project."
+    },
+    {
+      "question": "Compare the four types of task dependencies (FS, SS, FF, SF) with examples.",
+      "answer": "1) Finish-to-Start (FS): Task B cannot start until Task A finishes. Example: Construction cannot begin until design is complete. 2) Start-to-Start (SS): Both tasks can start at the same time. Example: Training can start when the system installation starts. 3) Finish-to-Finish (FF): Task B cannot finish until Task A is complete. Example: Testing cannot finish until coding is complete. 4) Start-to-Finish (SF): Task B cannot start until Task A finishes. Example: The old system version remains active until the new version starts running."
+    },
+    {
+      "question": "What is PERT and how does it handle uncertainty in duration estimates?",
+      "answer": "PERT (Program Evaluation and Review Technique) is a network analysis technique used to estimate project duration when there is high uncertainty. Instead of a single duration estimate, PERT uses three estimates: Optimistic (best case), Most Likely (normal case), and Pessimistic (worst case). The weighted average formula is: (O + 4M + P) / 6. The '4' gives more weight to the most likely estimate. Example: If O=3 weeks, M=4 weeks, P=5 weeks, then PERT = (3 + 16 + 5) / 6 = 4 weeks. This provides a more realistic estimate than a single-point estimate."
+    },
+    {
+      "question": "Explain Murphy's Law, Parkinson's Law, and how Critical Chain Scheduling addresses both.",
+      "answer": "Murphy's Law: 'If something can go wrong, it will.' This means delays and problems are inevitable in projects. Solution: Plan buffers for unexpected issues (like PERT pessimistic time). Parkinson's Law: 'Work expands to fill the time available.' If given extra time, teams will use it all even if not needed. Solution: Set shorter deadlines and monitor progress. Critical Chain Scheduling addresses both by: removing task-level buffers (prevents Parkinson's Law), adding Project Buffers (before deadline, handles Murphy's Law), adding Feeding Buffers (before critical path tasks), reducing multitasking, and improving overall efficiency."
+    },
+    {
+      "question": "Compare and contrast Gantt Charts and Network Diagrams.",
+      "answer": "Gantt Charts: Visual calendar-based timeline showing activities, start/finish dates, milestones (diamonds), summary tasks (thick bars), durations (light bars), and dependencies (arrows). Supports all dependency types. Best for communicating schedule to stakeholders. Network Diagrams: Focus specifically on task dependencies and relationships. Two types: ADM (arrows for activities, nodes for events, FS only) and PDM (boxes for activities, arrows for relationships, all dependency types). Best for analyzing critical path and task sequencing. Gantt Charts are more intuitive for scheduling; Network Diagrams are better for dependency analysis."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Calculating Critical Path for a Website Launch",
+      "scenario": "A company is launching a new website. The activities and their durations are:\n\nA: Requirements Gathering (2 weeks)\nB: UI Design (3 weeks, depends on A)\nC: Database Design (2 weeks, depends on A)\nD: Frontend Development (4 weeks, depends on B)\nE: Backend Development (5 weeks, depends on C)\nF: Integration Testing (2 weeks, depends on D and E)\nG: Deployment (1 week, depends on F)\n\nThe project manager wants to know the minimum project duration and which tasks are critical.",
+      "questions": [
+        "Draw the network diagram and identify all paths.",
+        "Calculate the duration of each path.",
+        "Identify the Critical Path.",
+        "What is the slack for non-critical tasks?"
+      ],
+      "analysis": "Paths: Path 1: A→B→D→F→G = 2+3+4+2+1 = 12 weeks. Path 2: A→C→E→F→G = 2+2+5+2+1 = 12 weeks. Both paths have the same duration (12 weeks), so BOTH are critical paths. This is risky — any delay on ANY task will delay the project. Minimum project duration = 12 weeks. Since both paths are critical, all tasks have zero slack. The project manager should monitor all tasks closely, consider adding resources to high-risk tasks, and build in buffers where possible."
+    },
+    {
+      "title": "Shortening a Delayed Construction Project",
+      "scenario": "A construction project is behind schedule by 3 weeks. The remaining critical path tasks are:\n\nElectrical work: 6 weeks (can be crashed to 4 weeks by adding $10,000)\nPlumbing: 4 weeks (can be crashed to 3 weeks by adding $8,000)\nFinishing: 5 weeks (can be crashed to 3 weeks by adding $15,000)\nInspection: 2 weeks (cannot be crashed)\n\nThe project manager has a $20,000 budget for schedule compression and needs to recover the 3-week delay.",
+      "questions": [
+        "What is the crash cost per week for each task that can be crashed?",
+        "Which tasks should be crashed to recover 3 weeks within budget?",
+        "Could fast tracking be used instead? If so, which tasks?",
+        "What are the risks of each approach?"
+      ],
+      "analysis": "Crash cost per week: Electrical: $10,000/2 weeks = $5,000/week. Plumbing: $8,000/1 week = $8,000/week. Finishing: $15,000/2 weeks = $7,500/week. To recover 3 weeks within $20,000: Crash Electrical by 2 weeks ($10,000) + Plumbing by 1 week ($8,000) = $18,000 for 3 weeks — within budget! Alternative: Electrical 2 weeks ($10,000) + Finishing 1 week ($7,500) = $17,500. Fast tracking option: Overlap Finishing with the end of Plumbing, or start Electrical and Plumbing in parallel (if dependencies allow). Risks: Crashing adds costs and may reduce quality with rushed work. Fast tracking increases risk of rework if overlapped tasks have issues. Neither can crash Inspection which is a regulatory requirement."
+    }
+  ]
+}

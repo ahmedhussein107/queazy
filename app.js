@@ -1,412 +1,543 @@
 // ==========================================
-// Queazy - Amazon Behavioral Interview Quiz
+// Queazy - IT Project Management Study Hub
 // ==========================================
 
 class QuizApp {
     constructor() {
-        // State
-        this.quizData = null;
-        this.selectedSectionIndex = null;
-        this.currentQuestionIndex = 0;
+        this.lectureData = null;
+        this.currentLecture = null;
+        this.currentMode = null;
+        this.questions = [];
+        this.currentIndex = 0;
         this.score = 0;
         this.answered = false;
-        this.questions = [];
 
-        // DOM Elements
         this.screens = {
             landing: document.getElementById('landing-screen'),
-            quiz: document.getElementById('quiz-screen'),
+            dashboard: document.getElementById('dashboard-screen'),
+            mcq: document.getElementById('mcq-screen'),
+            tf: document.getElementById('tf-screen'),
+            open: document.getElementById('open-screen'),
+            case: document.getElementById('case-screen'),
             results: document.getElementById('results-screen')
-        };
-
-        this.elements = {
-            sectionList: document.getElementById('section-list'),
-            startBtn: document.getElementById('start-quiz-btn'),
-            backBtn: document.getElementById('back-btn'),
-            sectionTitle: document.getElementById('section-title'),
-            progressBar: document.getElementById('progress-bar'),
-            questionCounter: document.getElementById('question-counter'),
-            scoreDisplay: document.getElementById('score-display'),
-            currentQNum: document.getElementById('current-q-num'),
-            questionText: document.getElementById('question-text'),
-            optionsContainer: document.getElementById('options-container'),
-            feedbackContainer: document.getElementById('feedback-container'),
-            feedbackIcon: document.getElementById('feedback-icon'),
-            feedbackText: document.getElementById('feedback-text'),
-            correctAnswerText: document.getElementById('correct-answer-text'),
-            nextBtn: document.getElementById('next-btn'),
-            finalScore: document.getElementById('final-score'),
-            totalQuestions: document.getElementById('total-questions'),
-            scoreCircleProgress: document.getElementById('score-circle-progress'),
-            resultsMessage: document.getElementById('results-message'),
-            correctCount: document.getElementById('correct-count'),
-            incorrectCount: document.getElementById('incorrect-count'),
-            retryBtn: document.getElementById('retry-btn'),
-            homeBtn: document.getElementById('home-btn'),
-            confetti: document.getElementById('confetti')
         };
 
         this.init();
     }
 
     async init() {
-        await this.loadQuizData();
+        this.renderLectureCards();
         this.bindEvents();
     }
 
-    async loadQuizData() {
-        try {
-            const response = await fetch('amazon_questions.json');
-            this.quizData = await response.json();
-            this.renderSections();
-        } catch (error) {
-            console.error('Failed to load quiz data:', error);
-            this.elements.sectionList.innerHTML = `
-                <div class="error-message">
-                    <p>Failed to load quiz data. Please refresh the page.</p>
-                </div>
-            `;
-        }
+    // ==========================================
+    // Navigation
+    // ==========================================
+    showScreen(name) {
+        Object.values(this.screens).forEach(s => s.classList.remove('active'));
+        this.screens[name].classList.add('active');
+        window.scrollTo(0, 0);
     }
 
-    renderSections() {
-        if (!this.quizData || !this.quizData.sections) return;
+    // ==========================================
+    // Landing Screen
+    // ==========================================
+    renderLectureCards() {
+        const lectures = [
+            { num: 1, title: 'Business Informatics & PM Fundamentals' },
+            { num: 2, title: 'Software Development Life Cycle & Methodologies' },
+            { num: 3, title: 'IT Project Selection, Integration & Procurement' },
+            { num: 4, title: 'IT Project Scope Management' },
+            { num: 5, title: 'IT Project Time Management' }
+        ];
 
-        this.elements.sectionList.innerHTML = this.quizData.sections.map((section, index) => `
-            <button class="section-item" data-index="${index}">
-                <span class="section-number">${index + 1}</span>
-                <span class="section-name">${section.section}</span>
-                <span class="question-count">${section.questions.length} questions</span>
-            </button>
+        const grid = document.getElementById('lecture-grid');
+        grid.innerHTML = lectures.map(l => `
+            <div class="lecture-card" data-lecture="${l.num}" role="button" tabindex="0">
+                <div class="lecture-num">${l.num}</div>
+                <div class="lecture-title">${l.title}</div>
+                <div class="lecture-meta">
+                    <span>30 MCQ</span>
+                    <span>30 T/F</span>
+                    <span>Q&A</span>
+                    <span>Cases</span>
+                </div>
+            </div>
         `).join('');
     }
 
-    bindEvents() {
-        // Section selection
-        this.elements.sectionList.addEventListener('click', (e) => {
-            const sectionItem = e.target.closest('.section-item');
-            if (!sectionItem) return;
-
-            // Deselect all
-            document.querySelectorAll('.section-item').forEach(item => {
-                item.classList.remove('selected');
-            });
-
-            // Select clicked
-            sectionItem.classList.add('selected');
-            this.selectedSectionIndex = parseInt(sectionItem.dataset.index);
-            this.elements.startBtn.disabled = false;
-        });
-
-        // Start quiz
-        this.elements.startBtn.addEventListener('click', () => {
-            if (this.selectedSectionIndex !== null) {
-                this.startQuiz();
-            }
-        });
-
-        // Back button
-        this.elements.backBtn.addEventListener('click', () => {
-            this.showScreen('landing');
-            this.resetQuiz();
-        });
-
-        // Next button
-        this.elements.nextBtn.addEventListener('click', () => {
-            this.nextQuestion();
-        });
-
-        // Options (using event delegation)
-        this.elements.optionsContainer.addEventListener('click', (e) => {
-            const optionBtn = e.target.closest('.option-btn');
-            if (!optionBtn || this.answered) return;
-
-            this.handleAnswer(optionBtn);
-        });
-
-        // Retry button
-        this.elements.retryBtn.addEventListener('click', () => {
-            this.startQuiz();
-        });
-
-        // Home button
-        this.elements.homeBtn.addEventListener('click', () => {
-            this.showScreen('landing');
-            this.resetQuiz();
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (this.screens.quiz.classList.contains('active')) {
-                if (!this.answered) {
-                    const keyMap = { '1': 0, '2': 1, '3': 2, '4': 3, 'a': 0, 'b': 1, 'c': 2, 'd': 3 };
-                    const index = keyMap[e.key.toLowerCase()];
-                    if (index !== undefined) {
-                        const options = this.elements.optionsContainer.querySelectorAll('.option-btn');
-                        if (options[index]) {
-                            this.handleAnswer(options[index]);
-                        }
-                    }
-                } else if (e.key === 'Enter' || e.key === ' ') {
-                    this.nextQuestion();
-                }
-            }
-        });
+    // ==========================================
+    // Data Loading
+    // ==========================================
+    async loadLecture(num) {
+        try {
+            const res = await fetch(`data/lecture${num}.json`);
+            this.lectureData = await res.json();
+            this.currentLecture = num;
+            return true;
+        } catch (err) {
+            console.error('Failed to load lecture:', err);
+            alert('Failed to load lecture data. Please try again.');
+            return false;
+        }
     }
 
-    showScreen(screenName) {
-        Object.values(this.screens).forEach(screen => {
-            screen.classList.remove('active');
-        });
-        this.screens[screenName].classList.add('active');
+    // ==========================================
+    // Dashboard
+    // ==========================================
+    showDashboard() {
+        const d = this.lectureData;
+        document.getElementById('dash-lecture-label').textContent = d.lecture;
+        document.getElementById('dash-lecture-title').textContent = d.title;
+        this.showScreen('dashboard');
     }
 
-    startQuiz() {
-        const section = this.quizData.sections[this.selectedSectionIndex];
-        this.questions = this.shuffleArray([...section.questions]);
-        this.currentQuestionIndex = 0;
+    // ==========================================
+    // MCQ Quiz
+    // ==========================================
+    startMCQ() {
+        this.currentMode = 'mcq';
+        this.questions = this.shuffle([...this.lectureData.mcq]);
+        this.currentIndex = 0;
         this.score = 0;
         this.answered = false;
 
-        this.elements.sectionTitle.textContent = section.section;
-        this.elements.scoreDisplay.textContent = '0';
-
-        this.showScreen('quiz');
-        this.displayQuestion();
+        document.getElementById('mcq-section-title').textContent = `${this.lectureData.lecture} — MCQ`;
+        document.getElementById('mcq-score').textContent = '0';
+        this.showScreen('mcq');
+        this.displayMCQ();
     }
 
-    displayQuestion() {
-        const question = this.questions[this.currentQuestionIndex];
-        const totalQuestions = this.questions.length;
+    displayMCQ() {
+        const q = this.questions[this.currentIndex];
+        const total = this.questions.length;
+        const progress = (this.currentIndex / total) * 100;
 
-        // Update progress
-        const progress = ((this.currentQuestionIndex) / totalQuestions) * 100;
-        this.elements.progressBar.style.width = `${progress}%`;
-        this.elements.questionCounter.textContent = `${this.currentQuestionIndex + 1}/${totalQuestions}`;
-        this.elements.currentQNum.textContent = this.currentQuestionIndex + 1;
+        document.getElementById('mcq-progress-bar').style.width = `${progress}%`;
+        document.getElementById('mcq-counter').textContent = `${this.currentIndex + 1}/${total}`;
+        document.getElementById('mcq-q-num').textContent = this.currentIndex + 1;
+        document.getElementById('mcq-question').textContent = q.question;
 
-        // Display question
-        this.elements.questionText.textContent = question.question;
-
-        // Display options - answer is now a letter (A, B, C, D)
-        this.elements.optionsContainer.innerHTML = question.options.map((option, index) => {
-            const letter = String.fromCharCode(65 + index); // A, B, C, D
+        document.getElementById('mcq-options').innerHTML = q.options.map((opt, i) => {
+            const letter = String.fromCharCode(65 + i);
             return `
                 <button class="option-btn" data-answer="${letter}">
                     <span class="option-letter">${letter}</span>
-                    <span class="option-text">${option}</span>
+                    <span class="option-text">${opt}</span>
                     <span class="option-icon icon-check">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
                     </span>
                     <span class="option-icon icon-x">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                            <path d="M18 6L6 18M6 6l12 12"/>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>
                     </span>
                 </button>
             `;
         }).join('');
 
-        // Reset state
         this.answered = false;
-        this.elements.feedbackContainer.classList.add('hidden');
-        this.elements.feedbackContainer.classList.remove('correct', 'incorrect');
-        this.elements.nextBtn.classList.add('hidden');
+        const fb = document.getElementById('mcq-feedback');
+        fb.classList.add('hidden');
+        fb.classList.remove('correct', 'incorrect');
+        document.getElementById('mcq-next-btn').classList.add('hidden');
     }
 
-    handleAnswer(optionBtn) {
+    handleMCQAnswer(btn) {
         if (this.answered) return;
         this.answered = true;
 
-        const selectedAnswer = optionBtn.dataset.answer; // Now uses letter (A, B, C, D)
-        const question = this.questions[this.currentQuestionIndex];
-        const isCorrect = selectedAnswer === question.answer;
+        const selected = btn.dataset.answer;
+        const q = this.questions[this.currentIndex];
+        const isCorrect = selected === q.answer;
 
-        // Get the correct answer text for display
-        const correctAnswerIndex = question.answer.charCodeAt(0) - 65; // A=0, B=1, C=2, D=3
-        const correctAnswerText = question.options[correctAnswerIndex];
-
-        // Disable all options
-        const allOptions = this.elements.optionsContainer.querySelectorAll('.option-btn');
-        allOptions.forEach(btn => {
-            btn.disabled = true;
-
-            // Highlight correct answer
-            if (btn.dataset.answer === question.answer) {
-                btn.classList.add('correct');
-            }
+        const allBtns = document.querySelectorAll('#mcq-options .option-btn');
+        allBtns.forEach(b => {
+            b.disabled = true;
+            if (b.dataset.answer === q.answer) b.classList.add('correct');
         });
 
-        // Mark selected answer
         if (isCorrect) {
-            optionBtn.classList.add('correct');
+            btn.classList.add('correct');
             this.score++;
-            this.elements.scoreDisplay.textContent = this.score;
+            document.getElementById('mcq-score').textContent = this.score;
         } else {
-            optionBtn.classList.add('incorrect');
+            btn.classList.add('incorrect');
         }
 
-        // Show feedback with full answer text
-        this.showFeedback(isCorrect, `${question.answer}. ${correctAnswerText}`);
-
-        // Show next button
-        this.elements.nextBtn.classList.remove('hidden');
+        this.showMCQFeedback(isCorrect, q.explanation);
+        document.getElementById('mcq-next-btn').classList.remove('hidden');
     }
 
-    showFeedback(isCorrect, correctAnswer) {
-        const container = this.elements.feedbackContainer;
-        container.classList.remove('hidden', 'correct', 'incorrect');
-        container.classList.add(isCorrect ? 'correct' : 'incorrect');
+    showMCQFeedback(isCorrect, explanation) {
+        const fb = document.getElementById('mcq-feedback');
+        fb.classList.remove('hidden', 'correct', 'incorrect');
+        fb.classList.add(isCorrect ? 'correct' : 'incorrect');
 
-        // Set icon
-        this.elements.feedbackIcon.innerHTML = isCorrect
-            ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                   <path d="M20 6L9 17l-5-5"/>
-               </svg>`
-            : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                   <path d="M18 6L6 18M6 6l12 12"/>
-               </svg>`;
+        document.getElementById('mcq-feedback-icon').innerHTML = isCorrect
+            ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>`
+            : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>`;
 
-        // Set text
-        this.elements.feedbackText.textContent = isCorrect
-            ? this.getRandomMessage('correct')
-            : this.getRandomMessage('incorrect');
+        document.getElementById('mcq-feedback-text').textContent = isCorrect
+            ? this.randomMsg('correct') : this.randomMsg('incorrect');
 
-        this.elements.correctAnswerText.textContent = isCorrect
-            ? ''
-            : `Correct answer: ${correctAnswer}`;
+        document.getElementById('mcq-explanation').textContent = explanation || '';
     }
 
-    getRandomMessage(type) {
-        const messages = {
-            correct: [
-                'Excellent!',
-                'Well done!',
-                'Perfect!',
-                'Great job!',
-                'Correct!',
-                'Amazing!',
-                'You got it!',
-                'Brilliant!'
-            ],
-            incorrect: [
-                'Not quite!',
-                'Incorrect',
-                'Wrong answer',
-                'Try to remember this one!',
-                'Keep learning!',
-                'Almost there!'
-            ]
-        };
-
-        const list = messages[type];
-        return list[Math.floor(Math.random() * list.length)];
-    }
-
-    nextQuestion() {
-        this.currentQuestionIndex++;
-
-        if (this.currentQuestionIndex >= this.questions.length) {
+    nextMCQ() {
+        this.currentIndex++;
+        if (this.currentIndex >= this.questions.length) {
             this.showResults();
         } else {
-            this.displayQuestion();
+            this.displayMCQ();
         }
     }
 
+    // ==========================================
+    // True/False Quiz
+    // ==========================================
+    startTF() {
+        this.currentMode = 'tf';
+        this.questions = this.shuffle([...this.lectureData.trueFalse]);
+        this.currentIndex = 0;
+        this.score = 0;
+        this.answered = false;
+
+        document.getElementById('tf-section-title').textContent = `${this.lectureData.lecture} — True/False`;
+        document.getElementById('tf-score').textContent = '0';
+        this.showScreen('tf');
+        this.displayTF();
+    }
+
+    displayTF() {
+        const q = this.questions[this.currentIndex];
+        const total = this.questions.length;
+        const progress = (this.currentIndex / total) * 100;
+
+        document.getElementById('tf-progress-bar').style.width = `${progress}%`;
+        document.getElementById('tf-counter').textContent = `${this.currentIndex + 1}/${total}`;
+        document.getElementById('tf-q-num').textContent = this.currentIndex + 1;
+        document.getElementById('tf-statement').textContent = q.statement;
+
+        // Reset buttons
+        const btns = document.querySelectorAll('#tf-buttons .tf-btn');
+        btns.forEach(b => {
+            b.disabled = false;
+            b.classList.remove('selected', 'correct', 'incorrect');
+        });
+
+        this.answered = false;
+        const fb = document.getElementById('tf-feedback');
+        fb.classList.add('hidden');
+        fb.classList.remove('correct', 'incorrect');
+        document.getElementById('tf-next-btn').classList.add('hidden');
+    }
+
+    handleTFAnswer(btn) {
+        if (this.answered) return;
+        this.answered = true;
+
+        const selected = btn.dataset.answer === 'true';
+        const q = this.questions[this.currentIndex];
+        const isCorrect = selected === q.answer;
+
+        const btns = document.querySelectorAll('#tf-buttons .tf-btn');
+        btns.forEach(b => {
+            b.disabled = true;
+        });
+
+        btn.classList.add('selected');
+        btn.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+        if (isCorrect) {
+            this.score++;
+            document.getElementById('tf-score').textContent = this.score;
+        }
+
+        // Show feedback with justification
+        const fb = document.getElementById('tf-feedback');
+        fb.classList.remove('hidden', 'correct', 'incorrect');
+        fb.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+        document.getElementById('tf-feedback-icon').innerHTML = isCorrect
+            ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>`
+            : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>`;
+
+        document.getElementById('tf-feedback-text').textContent = isCorrect
+            ? this.randomMsg('correct') : this.randomMsg('incorrect');
+
+        document.getElementById('tf-justification-text').textContent = q.justification;
+        document.getElementById('tf-next-btn').classList.remove('hidden');
+    }
+
+    nextTF() {
+        this.currentIndex++;
+        if (this.currentIndex >= this.questions.length) {
+            this.showResults();
+        } else {
+            this.displayTF();
+        }
+    }
+
+    // ==========================================
+    // Open-Ended
+    // ==========================================
+    showOpenEnded() {
+        const data = this.lectureData.openEnded;
+        document.getElementById('open-lecture-title').textContent = this.lectureData.title;
+
+        const container = document.getElementById('open-cards');
+        container.innerHTML = data.map((item, i) => `
+            <div class="study-card" data-index="${i}">
+                <div class="study-card-header">
+                    <div class="study-card-num">${i + 1}</div>
+                    <div class="study-card-question">${item.question}</div>
+                    <div class="study-card-toggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="study-card-answer">
+                    <div class="answer-content">${item.answer}</div>
+                </div>
+            </div>
+        `).join('');
+
+        this.showScreen('open');
+    }
+
+    // ==========================================
+    // Case Studies
+    // ==========================================
+    showCaseStudies() {
+        const data = this.lectureData.caseStudies;
+        document.getElementById('case-lecture-title').textContent = this.lectureData.title;
+
+        const container = document.getElementById('case-cards');
+        container.innerHTML = data.map((cs, i) => `
+            <div class="case-card">
+                <div class="case-card-header">
+                    <div class="case-label">Case Study ${i + 1}</div>
+                    <h3>${cs.title}</h3>
+                </div>
+                <div class="case-card-body">
+                    <div class="case-scenario">${cs.scenario}</div>
+                    <div class="case-questions">
+                        <h4>📝 Discussion Questions</h4>
+                        <ol>
+                            ${cs.questions.map(q => `<li>${q}</li>`).join('')}
+                        </ol>
+                    </div>
+                    <button class="case-analysis-toggle" data-case="${i}">
+                        <span>Show Analysis</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="case-analysis" id="case-analysis-${i}">
+                        ${cs.analysis}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        this.showScreen('case');
+    }
+
+    // ==========================================
+    // Results
+    // ==========================================
     showResults() {
         const total = this.questions.length;
-        const percentage = (this.score / total) * 100;
+        const pct = (this.score / total) * 100;
 
-        // Update stats
-        this.elements.finalScore.textContent = this.score;
-        this.elements.totalQuestions.textContent = total;
-        this.elements.correctCount.textContent = this.score;
-        this.elements.incorrectCount.textContent = total - this.score;
+        document.getElementById('final-score').textContent = this.score;
+        document.getElementById('total-questions').textContent = total;
+        document.getElementById('correct-count').textContent = this.score;
+        document.getElementById('incorrect-count').textContent = total - this.score;
 
-        // Animate score circle
-        const circumference = 2 * Math.PI * 54; // radius = 54
-        const offset = circumference - (percentage / 100) * circumference;
+        const circumference = 2 * Math.PI * 54;
+        const offset = circumference - (pct / 100) * circumference;
+        const circle = document.getElementById('score-circle-progress');
+        circle.style.strokeDashoffset = circumference;
 
-        setTimeout(() => {
-            this.elements.scoreCircleProgress.style.strokeDashoffset = offset;
-        }, 100);
+        setTimeout(() => { circle.style.strokeDashoffset = offset; }, 100);
 
-        // Set message
-        this.elements.resultsMessage.textContent = this.getResultMessage(percentage);
-
-        // Show screen
+        document.getElementById('results-message').textContent = this.getResultMessage(pct);
         this.showScreen('results');
 
-        // Confetti for good scores
-        if (percentage >= 70) {
-            this.createConfetti();
-        }
+        if (pct >= 70) this.createConfetti();
     }
 
-    getResultMessage(percentage) {
-        if (percentage === 100) return '🏆 Perfect score! You\'re a CSP master!';
-        if (percentage >= 80) return '🌟 Excellent work! You really know your stuff!';
-        if (percentage >= 60) return '👍 Good job! Keep practicing!';
-        if (percentage >= 40) return '📚 Not bad! Review the material and try again.';
+    getResultMessage(pct) {
+        if (pct === 100) return '🏆 Perfect score! You\'re a master!';
+        if (pct >= 80) return '🌟 Excellent! You really know your stuff!';
+        if (pct >= 60) return '👍 Good job! Keep practicing!';
+        if (pct >= 40) return '📚 Not bad! Review the material and try again.';
         return '💪 Keep studying! You\'ll get better with practice.';
     }
 
+    // ==========================================
+    // Events
+    // ==========================================
+    bindEvents() {
+        // Lecture card click
+        document.getElementById('lecture-grid').addEventListener('click', async (e) => {
+            const card = e.target.closest('.lecture-card');
+            if (!card) return;
+            const num = parseInt(card.dataset.lecture);
+            card.style.opacity = '0.7';
+            const ok = await this.loadLecture(num);
+            card.style.opacity = '1';
+            if (ok) this.showDashboard();
+        });
+
+        // Lecture card keyboard
+        document.getElementById('lecture-grid').addEventListener('keydown', async (e) => {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            const card = e.target.closest('.lecture-card');
+            if (!card) return;
+            e.preventDefault();
+            const num = parseInt(card.dataset.lecture);
+            const ok = await this.loadLecture(num);
+            if (ok) this.showDashboard();
+        });
+
+        // Dashboard back
+        document.getElementById('dash-back-btn').addEventListener('click', () => this.showScreen('landing'));
+
+        // Mode selection
+        document.querySelector('.mode-grid').addEventListener('click', (e) => {
+            const card = e.target.closest('.mode-card');
+            if (!card) return;
+            const mode = card.dataset.mode;
+            if (mode === 'mcq') this.startMCQ();
+            else if (mode === 'tf') this.startTF();
+            else if (mode === 'open') this.showOpenEnded();
+            else if (mode === 'case') this.showCaseStudies();
+        });
+
+        // MCQ events
+        document.getElementById('mcq-back-btn').addEventListener('click', () => this.showDashboard());
+        document.getElementById('mcq-options').addEventListener('click', (e) => {
+            const btn = e.target.closest('.option-btn');
+            if (btn) this.handleMCQAnswer(btn);
+        });
+        document.getElementById('mcq-next-btn').addEventListener('click', () => this.nextMCQ());
+
+        // T/F events
+        document.getElementById('tf-back-btn').addEventListener('click', () => this.showDashboard());
+        document.getElementById('tf-buttons').addEventListener('click', (e) => {
+            const btn = e.target.closest('.tf-btn');
+            if (btn) this.handleTFAnswer(btn);
+        });
+        document.getElementById('tf-next-btn').addEventListener('click', () => this.nextTF());
+
+        // Open-ended events
+        document.getElementById('open-back-btn').addEventListener('click', () => this.showDashboard());
+        document.getElementById('open-cards').addEventListener('click', (e) => {
+            const header = e.target.closest('.study-card-header');
+            if (!header) return;
+            const card = header.closest('.study-card');
+            card.classList.toggle('open');
+        });
+
+        // Case study events
+        document.getElementById('case-back-btn').addEventListener('click', () => this.showDashboard());
+        document.getElementById('case-cards').addEventListener('click', (e) => {
+            const toggle = e.target.closest('.case-analysis-toggle');
+            if (!toggle) return;
+            const idx = toggle.dataset.case;
+            const analysis = document.getElementById(`case-analysis-${idx}`);
+            const isOpen = analysis.classList.toggle('open');
+            toggle.classList.toggle('open', isOpen);
+            toggle.querySelector('span').textContent = isOpen ? 'Hide Analysis' : 'Show Analysis';
+        });
+
+        // Results events
+        document.getElementById('retry-btn').addEventListener('click', () => {
+            if (this.currentMode === 'mcq') this.startMCQ();
+            else if (this.currentMode === 'tf') this.startTF();
+        });
+        document.getElementById('home-btn').addEventListener('click', () => this.showScreen('landing'));
+
+        // Keyboard nav for quizzes
+        document.addEventListener('keydown', (e) => {
+            // MCQ shortcuts
+            if (this.screens.mcq.classList.contains('active')) {
+                if (!this.answered) {
+                    const map = { '1': 0, '2': 1, '3': 2, '4': 3, 'a': 0, 'b': 1, 'c': 2, 'd': 3 };
+                    const idx = map[e.key.toLowerCase()];
+                    if (idx !== undefined) {
+                        const opts = document.querySelectorAll('#mcq-options .option-btn');
+                        if (opts[idx]) this.handleMCQAnswer(opts[idx]);
+                    }
+                } else if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.nextMCQ();
+                }
+            }
+
+            // T/F shortcuts
+            if (this.screens.tf.classList.contains('active')) {
+                if (!this.answered) {
+                    if (e.key.toLowerCase() === 't' || e.key === '1') {
+                        const btn = document.querySelector('.tf-btn.tf-true');
+                        if (btn) this.handleTFAnswer(btn);
+                    } else if (e.key.toLowerCase() === 'f' || e.key === '2') {
+                        const btn = document.querySelector('.tf-btn.tf-false');
+                        if (btn) this.handleTFAnswer(btn);
+                    }
+                } else if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.nextTF();
+                }
+            }
+        });
+    }
+
+    // ==========================================
+    // Utilities
+    // ==========================================
+    shuffle(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    randomMsg(type) {
+        const msgs = {
+            correct: ['Excellent!', 'Well done!', 'Perfect!', 'Great job!', 'Correct!', 'Amazing!', 'Brilliant!', 'You got it!'],
+            incorrect: ['Not quite!', 'Incorrect', 'Wrong answer', 'Try to remember this!', 'Keep learning!', 'Almost there!']
+        };
+        const list = msgs[type];
+        return list[Math.floor(Math.random() * list.length)];
+    }
+
     createConfetti() {
-        const colors = ['#8B5CF6', '#06B6D4', '#10B981', '#F59E0B', '#EF4444', '#EC4899'];
-        const confettiCount = 50;
+        const colors = ['#6366F1', '#06B6D4', '#10B981', '#F59E0B', '#EF4444', '#EC4899'];
+        const el = document.getElementById('confetti');
+        el.innerHTML = '';
 
-        this.elements.confetti.innerHTML = '';
-
-        for (let i = 0; i < confettiCount; i++) {
+        for (let i = 0; i < 50; i++) {
             const piece = document.createElement('div');
             piece.className = 'confetti-piece';
             piece.style.left = `${Math.random() * 100}%`;
             piece.style.background = colors[Math.floor(Math.random() * colors.length)];
             piece.style.animationDelay = `${Math.random() * 2}s`;
             piece.style.animationDuration = `${2 + Math.random() * 2}s`;
-
-            // Random shapes
-            if (Math.random() > 0.5) {
-                piece.style.borderRadius = '50%';
-            } else {
-                piece.style.transform = `rotate(${Math.random() * 360}deg)`;
-            }
-
-            this.elements.confetti.appendChild(piece);
+            if (Math.random() > 0.5) piece.style.borderRadius = '50%';
+            else piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+            el.appendChild(piece);
         }
 
-        // Clean up after animation
-        setTimeout(() => {
-            this.elements.confetti.innerHTML = '';
-        }, 5000);
-    }
-
-    resetQuiz() {
-        this.currentQuestionIndex = 0;
-        this.score = 0;
-        this.answered = false;
-        this.questions = [];
-
-        // Reset progress circle
-        this.elements.scoreCircleProgress.style.strokeDashoffset = 339.292;
-
-        // Keep section selected
-        // Don't reset selectedSectionIndex so user can retry easily
-    }
-
-    shuffleArray(array) {
-        const shuffled = [...array];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled;
+        setTimeout(() => { el.innerHTML = ''; }, 5000);
     }
 }
 
-// Initialize the app when DOM is ready
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     window.quizApp = new QuizApp();
 });
