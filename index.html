@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Queazy - Interactive study platform with MCQs, True/False, Open-Ended Questions, and Case Studies for IT Project Management lectures">
-    <title>Queazy - IT Project Management Study Hub</title>
+    <title>Cloud Computing Midterm Exam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
@@ -19,30 +17,13 @@
 
         <!-- ========== LANDING SCREEN ========== -->
         <div id="landing-screen" class="screen active">
-            <div class="landing-content">
-                <div class="logo-area">
-                    <div class="logo-glow"></div>
-                    <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="32" cy="32" r="28" stroke="url(#lg)" stroke-width="3" />
-                        <path d="M20 22h24v4H20zM20 30h24v4H20zM20 38h16v4H20z" fill="url(#lg)" opacity="0.9" />
-                        <circle cx="46" cy="46" r="10" fill="url(#lg)" />
-                        <path d="M43 46l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <defs>
-                            <linearGradient id="lg" x1="0" y1="0" x2="64" y2="64">
-                                <stop offset="0%" stop-color="#6366F1" />
-                                <stop offset="100%" stop-color="#06B6D4" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h1 class="app-title">Queazy</h1>
-                </div>
-                <p class="app-subtitle">IT Project Management Study Hub</p>
-                <p class="app-description">Master your lectures with interactive quizzes, case studies, and more</p>
+            <div class="landing-content" style="text-align: center;">
+                <h1 class="app-title" style="font-size: 3rem; margin-bottom: 2rem;">Cloud Computing</h1>
+                <p class="app-subtitle" style="font-size: 1.5rem; margin-bottom: 3rem;">Midterm Exam Preparation</p>
 
-                <div id="lecture-grid" class="lecture-grid">
-                    <!-- Lecture cards populated by JS -->
-                </div>
+                <button id="start-exam-btn" class="btn btn-primary" style="font-size: 1.5rem; padding: 1rem 3rem;">
+                    Start Exam
+                </button>
             </div>
             <div class="floating-shapes">
                 <div class="shape shape-1"></div>
@@ -51,85 +32,20 @@
             </div>
         </div>
 
-        <!-- ========== DASHBOARD SCREEN ========== -->
-        <div id="dashboard-screen" class="screen">
-            <header class="screen-header">
-                <button id="dash-back-btn" class="btn btn-icon" title="Back to Lectures">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <div class="header-info">
-                    <span id="dash-lecture-label" class="header-label">Lecture 1</span>
-                    <h2 id="dash-lecture-title" class="header-title">Loading...</h2>
-                </div>
-            </header>
-            <main class="dashboard-main">
-                <div class="mode-grid">
-                    <button class="mode-card" data-mode="mcq" id="mode-mcq">
-                        <div class="mode-icon mcq-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="3" />
-                                <path d="M9 12l2 2 4-4" />
-                            </svg>
-                        </div>
-                        <h3>Multiple Choice</h3>
-                        <p>30 questions with 4 options</p>
-                        <span class="mode-badge">Quiz</span>
-                    </button>
-                    <button class="mode-card" data-mode="tf" id="mode-tf">
-                        <div class="mode-icon tf-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5" />
-                                <line x1="18" y1="6" x2="6" y2="18" opacity="0.4" />
-                            </svg>
-                        </div>
-                        <h3>True or False</h3>
-                        <p>30 statements with justification</p>
-                        <span class="mode-badge">Quiz</span>
-                    </button>
-                    <button class="mode-card" data-mode="open" id="mode-open">
-                        <div class="mode-icon open-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="16" y1="13" x2="8" y2="13" />
-                                <line x1="16" y1="17" x2="8" y2="17" />
-                            </svg>
-                        </div>
-                        <h3>Open-Ended Q&A</h3>
-                        <p>Detailed questions with model answers</p>
-                        <span class="mode-badge">Study</span>
-                    </button>
-                    <button class="mode-card" data-mode="case" id="mode-case">
-                        <div class="mode-icon case-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-                            </svg>
-                        </div>
-                        <h3>Case Studies</h3>
-                        <p>Real-world scenarios & analysis</p>
-                        <span class="mode-badge">Study</span>
-                    </button>
-                </div>
-            </main>
-        </div>
-
         <!-- ========== MCQ QUIZ SCREEN ========== -->
         <div id="mcq-screen" class="screen">
             <header class="quiz-header">
-                <button id="mcq-back-btn" class="btn btn-icon" title="Back to Dashboard">
+                <button id="mcq-back-btn" class="btn btn-icon" title="Back to Home">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7" />
                     </svg>
                 </button>
                 <div class="progress-info">
-                    <span id="mcq-section-title" class="header-label">MCQ Quiz</span>
+                    <span id="mcq-section-title" class="header-label">Exam Mode</span>
                     <div class="progress-container">
                         <div id="mcq-progress-bar" class="progress-bar"></div>
                     </div>
-                    <span id="mcq-counter" class="question-counter">1/30</span>
+                    <span id="mcq-counter" class="question-counter">1/x</span>
                 </div>
                 <div class="score-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -161,107 +77,6 @@
             </footer>
         </div>
 
-        <!-- ========== TRUE/FALSE QUIZ SCREEN ========== -->
-        <div id="tf-screen" class="screen">
-            <header class="quiz-header">
-                <button id="tf-back-btn" class="btn btn-icon" title="Back to Dashboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <div class="progress-info">
-                    <span id="tf-section-title" class="header-label">True or False</span>
-                    <div class="progress-container">
-                        <div id="tf-progress-bar" class="progress-bar"></div>
-                    </div>
-                    <span id="tf-counter" class="question-counter">1/30</span>
-                </div>
-                <div class="score-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                    <span id="tf-score">0</span>
-                </div>
-            </header>
-            <main class="quiz-main">
-                <div class="question-card">
-                    <div class="question-number"><span id="tf-q-num">1</span></div>
-                    <h2 id="tf-statement" class="question-text">Loading...</h2>
-                    <div id="tf-buttons" class="tf-buttons-container">
-                        <button class="tf-btn tf-true" data-answer="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <path d="M20 6L9 17l-5-5" />
-                            </svg>
-                            <span>True</span>
-                        </button>
-                        <button class="tf-btn tf-false" data-answer="false">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <path d="M18 6L6 18M6 6l12 12" />
-                            </svg>
-                            <span>False</span>
-                        </button>
-                    </div>
-                    <div id="tf-feedback" class="feedback-container hidden">
-                        <div id="tf-feedback-icon" class="feedback-icon"></div>
-                        <p id="tf-feedback-text" class="feedback-text"></p>
-                        <div id="tf-justification" class="justification-box">
-                            <h4>📖 Justification</h4>
-                            <p id="tf-justification-text"></p>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer class="quiz-footer">
-                <button id="tf-next-btn" class="btn btn-primary hidden">
-                    <span>Next Question</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </footer>
-        </div>
-
-        <!-- ========== OPEN-ENDED SCREEN ========== -->
-        <div id="open-screen" class="screen">
-            <header class="screen-header">
-                <button id="open-back-btn" class="btn btn-icon" title="Back to Dashboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <div class="header-info">
-                    <span class="header-label">Open-Ended Questions</span>
-                    <h2 id="open-lecture-title" class="header-title">Lecture</h2>
-                </div>
-            </header>
-            <main class="study-main">
-                <div id="open-cards" class="study-cards">
-                    <!-- Populated by JS -->
-                </div>
-            </main>
-        </div>
-
-        <!-- ========== CASE STUDIES SCREEN ========== -->
-        <div id="case-screen" class="screen">
-            <header class="screen-header">
-                <button id="case-back-btn" class="btn btn-icon" title="Back to Dashboard">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 12H5M12 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <div class="header-info">
-                    <span class="header-label">Case Studies</span>
-                    <h2 id="case-lecture-title" class="header-title">Lecture</h2>
-                </div>
-            </header>
-            <main class="study-main">
-                <div id="case-cards" class="study-cards">
-                    <!-- Populated by JS -->
-                </div>
-            </main>
-        </div>
-
         <!-- ========== RESULTS SCREEN ========== -->
         <div id="results-screen" class="screen">
             <div class="results-content">
@@ -278,7 +93,7 @@
                             </defs>
                         </svg>
                     </div>
-                    <h2 class="results-title">Quiz Complete!</h2>
+                    <h2 class="results-title">Exam Complete!</h2>
                 </div>
                 <div class="score-circle">
                     <svg viewBox="0 0 120 120">

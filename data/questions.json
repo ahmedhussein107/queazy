@@ -1,0 +1,1531 @@
+[
+    {
+        "id": 1,
+        "question": "What is an accurate statement about a hybrid cloud?",
+        "options": {
+            "A": "Supports data and application portability for load balancing between clouds",
+            "B": "Allows organizations with common concerns to share the cost of deploying the cloud",
+            "C": "Enables the entire data infrastructure to be controlled by the consumer's IT staff",
+            "D": "Allows an organization to outsource the implementation of a private cloud to a cloud provider"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 2,
+        "question": "What is an accurate statement about Software as a Service?",
+        "options": {
+            "A": "Consumer has limited control over specific application configuration settings",
+            "B": "Consumer has control over the operating system and deployed applications",
+            "C": "Consumer has control over the configuration settings of the application-hosting environment",
+            "D": "Consumer has limited control over select networking components, such as host firewalls"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 3,
+        "question": "Which cloud service does VMware vCloud Air provide?",
+        "options": {
+            "A": "Infrastructure as a Service",
+            "B": "Platform Service",
+            "C": "Database Service",
+            "D": "Software Service"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 4,
+        "question": "A start-up company with a limited budget is planning to adopt a hybrid cloud solution for their operations. The company has business-critical applications that serve customers and have strict service levels. In addition, the company has less critical applications such as backup and archive. Which hybrid cloud strategy should be recommended to the company?",
+        "options": {
+            "A": "Deploy the business-critical applications on an externally-hosted private cloud. Deploy the critical applications on a public cloud",
+            "B": "Deploy the business-critical applications on an on-premise private cloud. Deploy the less critical applications on an externally-hosted private cloud",
+            "C": "Deploy the business-critical applications on an on-premise private cloud. Deploy the critical applications on a public cloud",
+            "D": "Deploy the business-critical applications on an externally hosted private cloud. Deploy the less critical applications on an on premise private cloud"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 5,
+        "question": "Which benefit does the measured service characteristic provide to a cloud service provider?",
+        "options": {
+            "A": "Enables control and optimization of resource use",
+            "B": "Enables cloud services to communicate with each other",
+            "C": "Enables availability of specific resources depending on policy",
+            "D": "Enables the reduction and/or elimination of upfront IT expenditure"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 6,
+        "question": "Which cloud computing characteristic enables multi tenancy and abstracts the location of provided resources?",
+        "options": {
+            "A": "Resource pooling",
+            "B": "Measured service",
+            "C": "Rapid elasticity",
+            "D": "Broad network access"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 7,
+        "question": "What is an accurate statement about Infrastructure as a Service?",
+        "options": {
+            "A": "Consumer has control over the operating systems and the deployed applications",
+            "B": "Consumer only has control over user-specific application configuration settings",
+            "C": "Consumer has control over network devices, compute systems, and storage systems",
+            "D": "Consumer only has control over the configuration settings of the application-hosting environment"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 8,
+        "question": "What is an accurate statement about Platform as a Service?",
+        "options": {
+            "A": "Consumer has control over the deployed applications",
+            "B": "Consumer has control over the operating system and database management system",
+            "C": "Consumer has control over the programming languages and tools",
+            "D": "Consumer has control over the operating system and storage"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 9,
+        "question": "Which capability does big data analytics provide?",
+        "options": {
+            "A": "Enabling data-driven decisions from large volumes of data",
+            "B": "Storing large volumes of data without affecting availability",
+            "C": "Reducing the data storage capacity requirement",
+            "D": "Performing analytics using traditional tools"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 10,
+        "question": "What is signified by the \"variability\" characteristic of big data?",
+        "options": {
+            "A": "Meaning of the data changes constantly",
+            "B": "Data is generated in different formats by numerous sources",
+            "C": "Data change rate affects its timely analysis",
+            "D": "Varying data quality affects its reliability and accuracy"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 11,
+        "question": "What is signified by the \"variety\" characteristic of big data?",
+        "options": {
+            "A": "Data is generated in different formats by numerous sources",
+            "B": "Meaning of the data changes constantly",
+            "C": "Varying data quality affects its reliability and accuracy",
+            "D": "Data change rate affects its timely analysis"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 12,
+        "question": "What does the transformation of an operating model for third platform adoption involve?",
+        "options": {
+            "A": "Provisioning IT resources through a self-service portal",
+            "B": "Establishing new roles and responsibilities to manage IT services",
+            "C": "Adopting virtualization technologies to enable automation",
+            "D": "Building new technical and business skills in the IT staff"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 13,
+        "question": "What is an accurate statement about a data lake?",
+        "options": {
+            "A": "Stores data in an exact or near-exact copy of the source format",
+            "B": "Supports query and analysis by classifying and organizing data before storing",
+            "C": "Stores current and historical data in a structured format on object-based storage",
+            "D": "Provides a single consistent view of data across an organization for report generation"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 14,
+        "question": "Which capability is provided by a software-defined storage controller?",
+        "options": {
+            "A": "Ability to pool and abstract physical storage and present it as an open storage platform",
+            "B": "Ability for multiple operating systems to run concurrently on a single physical compute system",
+            "C": "Mechanisms to automatically create application programming interfaces for centralized management",
+            "D": "Single self-contained package with integrated hardware and software components"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 15,
+        "question": "What is a benefit of using converged infrastructure for building a data center?",
+        "options": {
+            "A": "Reduces the time to acquire and deploy the infrastructure",
+            "B": "Provides the flexibility to purchase individual IT components",
+            "C": "Integrates existing IT components into the infrastructure",
+            "D": "Offers the flexibility to change vendors and prevent vendor lock-in"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 16,
+        "question": "What is a function of the orchestration layer in a data center infrastructure?",
+        "options": {
+            "A": "Provides workflows for automated execution of management tasks",
+            "B": "Aggregates physical infrastructure components into resource pools",
+            "C": "Measures the consumption of IT resources by various services",
+            "D": "Decouples an operating environment from the underlying hardware"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 17,
+        "question": "Which product provides an integrated IT infrastructure solution for data center deployment by combining IT resources into a single package?",
+        "options": {
+            "A": "VCE Vblock",
+            "B": "EMC VPLEX",
+            "C": "EMC ViPR",
+            "D": "VMware vCloud"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 18,
+        "question": "Which VMware product provides a network virtualization platform for a software-defined data center?",
+        "options": {
+            "A": "NSX",
+            "B": "ESXi",
+            "C": "Horizon",
+            "D": "AirWatch"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 19,
+        "question": "Which process groups multiple physical drives and presents them to a compute system as a single logical volume?",
+        "options": {
+            "A": "Concatenation",
+            "B": "Partitioning",
+            "C": "Striping",
+            "D": "Orchestration"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 20,
+        "question": "What is a benefit of application virtualization?",
+        "options": {
+            "A": "Avoids conflicts between different versions of the same application",
+            "B": "Enables an application to directly access a LUN on a storage system",
+            "C": "Runs applications without requiring the use of cache memory",
+            "D": "Presents more memory to an application than is physically available"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 21,
+        "question": "What is an accurate statement about the application presentation technique of application virtualization?",
+        "options": {
+            "A": "Application executes remotely and its user interface is transmitted to the client",
+            "B": "Application is downloaded in portions on the client for local execution",
+            "C": "Application executes on the client without the use of a locally installed agent",
+            "D": "Application is converted into a standalone package that directly executes on the client"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 22,
+        "question": "What is an accurate statement about the application streaming technique of application virtualization?",
+        "options": {
+            "A": "Application is downloaded in portions on the client for local execution",
+            "B": "Application executes remotely and its user interface is transmitted to the client",
+            "C": "Application executes on the client without the use of a locally-installed agent",
+            "D": "Application is converted into a standalone package that directly executes on the client"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 23,
+        "question": "What is an accurate statement about remote desktop services?",
+        "options": {
+            "A": "Operating system and applications hosted on a remote compute system are shared by multiple users",
+            "B": "Users are provided dedicated virtual machines running operating system and applications, and hosted on a client system",
+            "C": "Users have the flexibility to install applications and modify operating system settings on the remote compute system",
+            "D": "Users interface of the remote desktop is transmitted to the client without the use of a remote display protocol"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 24,
+        "question": "What is an accurate statement about a virtual desktop infrastructure?",
+        "options": {
+            "A": "Each user is provided a dedicated desktop VM with its own operating system and applications",
+            "B": "Operating system and applications hosted on a client system are shared by multiple users",
+            "C": "Each user has an individual desktop session on the remote compute system in which applications execute",
+            "D": "Operating system and applications on the remote desktop are downloaded on the client for local execution"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 25,
+        "question": "What is a function of a virtual machine manager?",
+        "options": {
+            "A": "Abstract physical hardware and presents it to a virtual machine",
+            "B": "Sends resource requests from multiple virtual machines to the hypervisor kernel",
+            "C": "Maps the virtual machine hardware to the hypervisor kernel",
+            "D": "Presents resource requests from a virtual machine directly to physical hardware"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 26,
+        "question": "What is an accurate statement about a logical volume in a compute system?",
+        "options": {
+            "A": "Can span across multiple physical volumes",
+            "B": "Can only be created from a single physical volume",
+            "C": "Must be created across multiple volume groups",
+            "D": "Allows multiple file systems to run concurrently"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 27,
+        "question": "In which data access method does the file system access an iSCSI storage system over a network?",
+        "options": {
+            "A": "Block-based",
+            "B": "File-based",
+            "C": "Object-based",
+            "D": "Sector-based"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 28,
+        "question": "What improves the performance of multi-threaded large block I/O workloads on a solid state drive?",
+        "options": {
+            "A": "Parallel I/O channels",
+            "B": "Write coalescing",
+            "C": "Native command queuing",
+            "D": "High capacity RAM cache"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 29,
+        "question": "Which data access method enables a compute system to access a file system that resides on a storage system?",
+        "options": {
+            "A": "File-based",
+            "B": "Block-based",
+            "C": "Object-based",
+            "D": "Sector-based"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 30,
+        "question": "An organization plans to deploy a new application in their environment. The new application requires 2 TB of storage space. During peak workloads, the application is expected to generate 9800 IOPS with a typical I/O size of 4 KB. The capacity of each available disk drive is 250 GB. The maximum number of IOPS a drive can perform at with 70 percent utilization is 90 IOPS. What is the minimum number of disk drives needed to meet the application's capacity and performance requirements given a RAID 0 configuration?",
+        "options": {
+            "A": "8",
+            "B": "70",
+            "C": "110",
+            "D": "140"
+        },
+        "answer": "C"
+    },
+    {
+        "id": 31,
+        "question": "An organization plans to deploy a new application in their environment. The new application requires 3 TB of storage space. During peak workloads, the application is expected to generate 2450 IOPS with a typical I/O size of 2 KB. The capacity of each available disk drive is 500 GB. The maximum number of IOPS a drive can perform at with 70 percent utilization is 80 IOPS. What is the minimum number of disk drives needed to meet the application's capacity and performance requirements given a RAID 0 configuration?",
+        "options": {
+            "A": "6",
+            "B": "10",
+            "C": "25",
+            "D": "20"
+        },
+        "answer": "D"
+    },
+    {
+        "id": 32,
+        "question": "An organization plans to deploy a new application in their environment. The new application requires 8 TB of storage space. During peak workloads, the application is expected to generate 4900 IOPS with a typical I/O size of 8 KB. The capacity of each available disk drive is 500 GB. The maximum number of IOPS a drive can perform at with a 70 percent utilization is 110 IOPS. What is the minimum number of disk drives needed to meet the application's capacity and performance requirements given a RAID 0 configuration?",
+        "options": {
+            "A": "8",
+            "B": "20",
+            "C": "30",
+            "D": "45"
+        },
+        "answer": "D"
+    },
+    {
+        "id": 33,
+        "question": "What accurately describes the seek time of a disk drive?",
+        "options": {
+            "A": "Time taken to position the read/write head over the correct track",
+            "B": "Time taken by the platter to position the data under the read/write head",
+            "C": "Time taken to read a block of data from the platter",
+            "D": "Time taken by the controller to service an I/O from the application"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 34,
+        "question": "Which solid state drive component performs write coalescing?",
+        "options": {
+            "A": "Controller",
+            "B": "I/O interface",
+            "C": "Non-volatile memory",
+            "D": "Cache"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 35,
+        "question": "An application generates 8400 small random I/Os at peak workloads with a read/write ratio of 2:1. What is the disk load at peak activity for a RAID 1/0 configuration?",
+        "options": {
+            "A": "5600",
+            "B": "11200",
+            "C": "16800",
+            "D": "22400"
+        },
+        "answer": "B"
+    },
+    {
+        "id": 36,
+        "question": "An application generates 8400 small random I/Os at peak workloads with a read/write ratio of 2:1. What is the disk load at peak activity for a RAID 5 configuration?",
+        "options": {
+            "A": "4800",
+            "B": "11200",
+            "C": "16800",
+            "D": "22400"
+        },
+        "answer": "C"
+    },
+    {
+        "id": 37,
+        "question": "An application generates 4200 small random I/Os at peak workloads with a read/write ratio of 2:1. What is the disk load at peak activity for a RAID 6 configuration?",
+        "options": {
+            "A": "2800",
+            "B": "5600",
+            "C": "8400",
+            "D": "11200"
+        },
+        "answer": "D"
+    },
+    {
+        "id": 38,
+        "question": "What is an accurate statement about a software RAID implementation?",
+        "options": {
+            "A": "Uses CPU cycles of a compute system to perform RAID calculations",
+            "B": "Supports the upgrade of RAID software on incompatible OS",
+            "C": "Uses a specialized hardware controller to perform RAID calculations",
+            "D": "Supports all RAID levels"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 39,
+        "question": "What is an accurate statement about a hardware RAID implementation?",
+        "options": {
+            "A": "Uses a specialized hardware controller installed on a storage array",
+            "B": "Uses CPU cycles of a compute system to perform RAID calculations",
+            "C": "Requires a RAID controller and operating system to be compatible",
+            "D": "Offers a low-cost solution for providing disk protection"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 40,
+        "question": "Which type of LUN provides full control for precise data placement and allows an administrator to create LUNs on different RAID sets when there is workload contention?",
+        "options": {
+            "A": "Traditional",
+            "B": "Thin",
+            "C": "Journal",
+            "D": "Bitmap"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 41,
+        "question": "Which LUN expansion technique provides both capacity expansion and performance improvement?",
+        "options": {
+            "A": "Striped metaLUN",
+            "B": "Partitioned metaLUN",
+            "C": "Virtual metaLUN",
+            "D": "Concatenated metaLUN"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 42,
+        "question": "Which elements are associated with an object in an object-based storage system?",
+        "options": {
+            "A": "Data, metadata, object ID, and attributes",
+            "B": "LUN ID, data, metadata, and object ID",
+            "C": "Metadata, object ID, attributes, and file path",
+            "D": "Object ID, attributes, LUN ID, and file path"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 43,
+        "question": "Which EMC product is a hyper-scale storage infrastructure that provides universal accessibility with support for object and HDFS?",
+        "options": {
+            "A": "ECS Appliance",
+            "B": "XtremIO",
+            "C": "Data Domain",
+            "D": "Centera"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 44,
+        "question": "In an object-based storage system, data is divided into 9 data segments and 3 coding segments using the erasure coding technique. What is the maximum number of disk drive failures against which data is protected by this configuration?",
+        "options": {
+            "A": "3",
+            "B": "9",
+            "C": "12",
+            "D": "0"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 45,
+        "question": "In an object-based storage system, data is divided into 10 data segments and 4 coding segments using the erasure coding technique. What is the maximum number of disk drive failures against which data is protected by this configuration?",
+        "options": {
+            "A": "4",
+            "B": "0",
+            "C": "10",
+            "D": "14"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 46,
+        "question": "Which feature of object-based storage system abstracts and provides a common view of storage independent of location to applications?",
+        "options": {
+            "A": "Global namespace",
+            "B": "Flexible data access",
+            "C": "Multi-tenancy",
+            "D": "Scale-out architecture"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 47,
+        "question": "What is an advantage of a software-based object storage implementation?",
+        "options": {
+            "A": "Provides the flexibility to reuse the existing infrastructure",
+            "B": "Requires less storage capacity to store a large number of objects",
+            "C": "Provides the flexibility to create more than one object ID for an object",
+            "D": "Requires less hardware to support scalable architecture"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 48,
+        "question": "Which EMC product provides a software-defined platform that supports both block and file storage services?",
+        "options": {
+            "A": "ViPR Controller",
+            "B": "ScaleIO",
+            "C": "Elastic Cloud Storage",
+            "D": "XtremIO"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 49,
+        "question": "Which EMC product provides a software-defined storage platform that supports object storage services?",
+        "options": {
+            "A": "Elastic Cloud Storage",
+            "B": "ViPR Controller",
+            "C": "ScaleIO",
+            "D": "XtremIO"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 50,
+        "question": "Which EMC product provides a software-defined storage platform to create a compute-based storage area network?",
+        "options": {
+            "A": "ScaleIO",
+            "B": "XtremIO",
+            "C": "Celerra",
+            "D": "Atmos"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 51,
+        "question": "Which component of a software-defined storage (SDS) environment manages and provisions storage?",
+        "options": {
+            "A": "SDS controller",
+            "B": "REST API",
+            "C": "SDS web service",
+            "D": "Storage agent"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 52,
+        "question": "Which component of a software-defined storage (SDS) environment enables integration with external monitoring tools?",
+        "options": {
+            "A": "REST API",
+            "B": "Metadata service",
+            "C": "SDS web service",
+            "D": "Storage agent"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 53,
+        "question": "What is a function of the metadata manager in a compute-based storage area network (SAN)?",
+        "options": {
+            "A": "Controls load balancing and data migration in a compute-based SAN",
+            "B": "Provides an interface to the software-defined storage controller",
+            "C": "Controls all data read and write operations in a compute-based SAN",
+            "D": "Performs the I/O operations on the local storage of a compute system as requested by a client"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 54,
+        "question": "Which global addressing does the REST application programming interface use for the discovery of a storage service?",
+        "options": {
+            "A": "Uniform Resource Identifier",
+            "B": "Namespace",
+            "C": "Extensible Markup Language",
+            "D": "Controller-provided MAC address"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 55,
+        "question": "What is a benefit of link aggregation in a SAN?",
+        "options": {
+            "A": "Provides a higher throughput than a single interswitch link can provide",
+            "B": "Distributes the network traffic across all virtual SANs, ensuring even virtual SAN utilization",
+            "C": "Optimizes performance by consolidating all interswitch links into a single physical link",
+            "D": "Provides the flexibility to deploy the same interswitch links for both FC and iSCSI traffic"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 56,
+        "question": "What accurately describes link aggregation in a SAN?",
+        "options": {
+            "A": "Combines two or more parallel interswitch links into a single logical interswitch link",
+            "B": "Aggregates the data transmission rate of all HBA and storage system port pairs",
+            "C": "Consolidates compute-to-compute traffic and storage traffic into a single interswitch link",
+            "D": "Replaces multiple parallel interswitch links by a single physical interswitch link"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 57,
+        "question": "What is a benefit of a storage area network (SAN)?",
+        "options": {
+            "A": "Enables compute systems across locations to access shared storage",
+            "B": "Ensures secure data transmission using only channel technologies",
+            "C": "Ensures high response times without the protocol overhead",
+            "D": "Enables consolidation of control and data planes in a single system"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 58,
+        "question": "What is a characteristic of software-defined networking?",
+        "options": {
+            "A": "Abstracts and separates the control plane from the data plane",
+            "B": "Data plane sends instructions to the control plane to handle network traffic",
+            "C": "Controller in network switches takes over data plane functions",
+            "D": "External software combines both data plane and control plane functions"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 59,
+        "question": "What is a function of the FC-1 layer of the Fibre Channel (FC) protocol stack?",
+        "options": {
+            "A": "Defines data encoding",
+            "B": "Provides FC addressing",
+            "C": "Defines the physical interface",
+            "D": "Maps upper layer protocols to FC layers"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 60,
+        "question": "What keeps the name server up-to-date on all switches in a fabric?",
+        "options": {
+            "A": "SW-RSCN",
+            "B": "Management server",
+            "C": "Zoning",
+            "D": "FLOGI"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 61,
+        "question": "Which data structure enables two node ports to identify and manage a set of information units in a Fibre Channel (FC) SAN?",
+        "options": {
+            "A": "Exchange",
+            "B": "Sequence",
+            "C": "Frame",
+            "D": "Domain"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 62,
+        "question": "What is a benefit of block-level storage virtualization?",
+        "options": {
+            "A": "Enables the online expansion of virtual volumes",
+            "B": "Enhances performance by limiting the RSCN traffic",
+            "C": "Improves security through logical segmentation of block storage devices",
+            "D": "Increases scalability through separation of FC addresses across VSANs"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 63,
+        "question": "Which fabric service distributes SW-RSCNs to the other switches in a Fibre Channel SAN?",
+        "options": {
+            "A": "Fabric controller",
+            "B": "Fabric login server",
+            "C": "Name server",
+            "D": "Fabric management server"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 64,
+        "question": "What accurately describes a VSAN?",
+        "options": {
+            "A": "A logical fabric on an FC SAN that enables communication among a group of nodes",
+            "B": "A logical fabric on an FC SAN that has a 1-to-1 relationship with a zone in the FC SAN",
+            "C": "A logical fabric across FC SANs that aggregates the FC SANs to create a network pool",
+            "D": "A logical fabric across FC SANs that allows non-disruptive file mobility between the SANs"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 65,
+        "question": "What is an accurate statement about VSAN trunking?",
+        "options": {
+            "A": "Allows network traffic from multiple VSANs to traverse a single interswitch link",
+            "B": "Enables an E_Port to transfer multiple VSAN traffic over a single port channel",
+            "C": "Provides VSAN IDs to E_Ports to include them in the VLANs",
+            "D": "Forwards FC frames between E_Ports that belong to the same VSAN"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 66,
+        "question": "What accurately describes the flow control mechanism in an FC SAN?",
+        "options": {
+            "A": "Both transmitting and receiving ports agree on the number of buffers available during port login",
+            "B": "Negotiation occurs between an E_Port and an F_Port and between two N_Ports",
+            "C": "Credit value is incremented when a frame is transmitted and decremented upon receiving a response",
+            "D": "Receiver Ready (R_RDY) is sent from the receiving port if available credits reach zero"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 67,
+        "question": "What is enabled by the N_Port ID virtualization (NPIV)?",
+        "options": {
+            "A": "A single physical N_Port to obtain multiple FC addresses",
+            "B": "A single virtual N_Port to act as a physical Ethernet port",
+            "C": "A virtualization layer to map virtual volumes to LUN IDs",
+            "D": "A single physical N_Port to act as a virtual HBA port"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 68,
+        "question": "What is a benefit of N_Port virtualization (NPV)?",
+        "options": {
+            "A": "Reduces the number of domain IDs in a fabric",
+            "B": "Eliminates the overhead of fabric services in a FC SAN",
+            "C": "Enables online expansion of virtual volumes",
+            "D": "Allows an N_Port to transfer multiple VSAN traffic"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 69,
+        "question": "Which fabric login type enables two N_Ports to exchange service parameters to establish a session?",
+        "options": {
+            "A": "PLOGI",
+            "B": "PRLI",
+            "C": "FLOGI",
+            "D": "WWPN"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 70,
+        "question": "Which type of login is performed between an N_Port and an F_Port in a Fibre Channel SAN environment?",
+        "options": {
+            "A": "FLOGI",
+            "B": "PLOGI",
+            "C": "PRLI",
+            "D": "WWPN"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 71,
+        "question": "Which fabric login type occurs between two N_Ports to exchange FC-4 upper layer protocol-related parameters?",
+        "options": {
+            "A": "PRLI",
+            "B": "FLOGI",
+            "C": "PLOGI",
+            "D": "WWNN"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 72,
+        "question": "How does iSCSI initiator discover its targets?",
+        "options": {
+            "A": "Initiator sends a query to an iSNS server for a list of available targets",
+            "B": "Initiator receives the iSCSI names of its targets from the primary DNS server",
+            "C": "Initiator uses the data center bridging exchange protocol for the discovery",
+            "D": "Initiator sends SCSI commands and the target responds by sending its name"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 73,
+        "question": "What is a benefit of configuring EX_Ports on each Fibre Channel over IP (FCIP) gateway in an FCIP tunnel implementation?",
+        "options": {
+            "A": "Enables FC-FC routing through the FCIP tunnel without merging the fabrics",
+            "B": "Merges the fabrics at either end of the FCIP tunnel to create a single large fabric",
+            "C": "Transfers VSAN tagged traffic over the FCIP tunnel without FC protocol overhead",
+            "D": "Creates eight virtual FC links on the FCIP tunnel that can be paused and restarted independently"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 74,
+        "question": "Which lossless Ethernet functionality helps Converged Enhanced Ethernet (CEE) devices to convey and configure their features with the other CEE devices in the network?",
+        "options": {
+            "A": "Data center bridging exchange protocol",
+            "B": "Enhanced transmission selection",
+            "C": "Priority-based flow control",
+            "D": "Congestion notification"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 75,
+        "question": "In an FCoE environment, which functionality provides a framework for the allocation of bandwidth to different network traffic classes?",
+        "options": {
+            "A": "Enhanced transmission selection",
+            "B": "Priority-based flow control",
+            "C": "Congestion notification",
+            "D": "Data center bridging exchange protocol"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 76,
+        "question": "What is a component of an FCoE switch?",
+        "options": {
+            "A": "Ethernet Bridge",
+            "B": "Virtual N_Port",
+            "C": "Converged Network Adapter",
+            "D": "FCIP Forwarder"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 77,
+        "question": "What is a function of a Fibre Channel Forwarder in an FCoE SAN?",
+        "options": {
+            "A": "Applies zoning configurations and provides fabric services",
+            "B": "Transfers FCoE traffic over an FC SAN",
+            "C": "Encapsulates IP packets into FC frames",
+            "D": "Provides both NIC and FC HBA functionality"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 78,
+        "question": "What is an accurate statement about VLANs and VSANs in an FCoE environment with an existing FC SAN?",
+        "options": {
+            "A": "A dedicated VLAN must be configured for each VSAN",
+            "B": "VLANs configured for VSANs must carry regular LAN traffic",
+            "C": "Default VLAN must map to all VSANs defined in the FCoE switch",
+            "D": "A minimum of four VLANs must be created to isolate VSAN traffic"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 79,
+        "question": "Which action takes place during the login phase in an FCoE SAN?",
+        "options": {
+            "A": "VN_Ports obtain FC addresses",
+            "B": "Nodes locate the Fibre Channel Forwarder",
+            "C": "Initialization protocol starts transporting FC data",
+            "D": "VN_Port to N_Port pairing is established"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 80,
+        "question": "What is an accurate statement about a fabric-provided MAC address (FPMA) used in an FCoE SAN?",
+        "options": {
+            "A": "FCoE switches provide MAC addresses to VN_Ports during node login",
+            "B": "FC switches provide MAC addresses to VE_Ports dynamically during discovery",
+            "C": "Compute systems provide MAC addresses to the VF_Ports on FCoE switches",
+            "D": "Both VF_Ports and VE_Ports obtain MAC addresses from FC switches"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 81,
+        "question": "What is determined by the recovery point objective in a business continuity solution?",
+        "options": {
+            "A": "Frequency of the backup",
+            "B": "Type of backup devices",
+            "C": "Type of disaster recovery site",
+            "D": "Distance between the primary and disaster recovery sites"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 82,
+        "question": "A system has three components and all three components need to be operational for 24 hours, Monday through Friday. During a particular week, failure of component 3 occurred as follows: Tuesday 8 AM to 1 PM, Thursday 5 PM to 10 PM, Friday 5 AM to 10 AM. What is the mean time between failures on component 3 for that week?",
+        "options": {
+            "A": "5 hours",
+            "B": "35 hours",
+            "C": "40 hours",
+            "D": "51 hours"
+        },
+        "answer": "C"
+    },
+    {
+        "id": 83,
+        "question": "A system has three components and all three components need to be operational for 24 hours, Monday through Friday. During a particular week, failure of component 1 occurred as follows: Tuesday 8 AM to 11 AM, Thursday 8 PM to 10 PM, Friday 5 AM to 8 AM. What is the mean time between failures on component 1 for that week?",
+        "options": {
+            "A": "3 hours",
+            "B": "37 hours",
+            "C": "40 hours",
+            "D": "53 hours"
+        },
+        "answer": "B"
+    },
+    {
+        "id": 84,
+        "question": "In which stage of the business continuity planning lifecycle does an organization identify critical business processes and assign recovery priorities?",
+        "options": {
+            "A": "Analyzing",
+            "B": "Establishing objectives",
+            "C": "Designing and developing",
+            "D": "Implementing"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 85,
+        "question": "What refers to an IT infrastructure's ability to function based on business expectations during its specified time of operations?",
+        "options": {
+            "A": "Information availability",
+            "B": "Disaster recovery",
+            "C": "Compliance adherence",
+            "D": "Business agility"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 86,
+        "question": "What is a benefit of backing up data to a disk library?",
+        "options": {
+            "A": "Provides improved backup and recovery performance",
+            "B": "Provides built-in portability to meet offsite requirements",
+            "C": "Supports the shoe shining effect for improved backup performance",
+            "D": "Pre-configured and dedicated appliance is only used for backups"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 87,
+        "question": "What is an accurate statement about three-way NDMP backup in a NAS environment?",
+        "options": {
+            "A": "Backup data is sent directly from NAS to the backup device",
+            "B": "Backup data is sent to the backup device through the application servers",
+            "C": "A dedicated backup device is required for each NAS",
+            "D": "All NAS systems should have the same operating environment"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 88,
+        "question": "An organization performs a full back up every Sunday and cumulative back ups on the remaining days. On Thursday, a data corruption occurs that requires a data restoration from the backup copies. How many backup copies are required to perform this restoration?",
+        "options": {
+            "A": "2",
+            "B": "3",
+            "C": "5",
+            "D": "6"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 89,
+        "question": "An organization performs a full back up every Sunday and incremental back ups on the remaining days at 9:00 AM. However, at 10 PM on Friday, a data corruption occurs that requires a data restoration from the backup copies. How many backup copies are required to perform this restoration?",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "6"
+        },
+        "answer": "D"
+    },
+    {
+        "id": 90,
+        "question": "An administrator has defined a backup policy. Full backups will be performed at 8 PM every Monday and incremental backups performed at 8 PM the remaining days. How many backup copies are required to restore the files if they were accidentally deleted on Friday morning?",
+        "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3",
+            "D": "4"
+        },
+        "answer": "D"
+    },
+    {
+        "id": 91,
+        "question": "What is a function of the NDMP server in an NDMP-based backup approach?",
+        "options": {
+            "A": "Reads the data from the storage device and sends the data to the backup device",
+            "B": "Reads the data from the backup server and sends the data to the backup device",
+            "C": "Instructs the NAS head to start the backup operation",
+            "D": "Instructs the backup agent on the client to send the data to the backup device"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 92,
+        "question": "Which component is required for a 'recovery-in-place' backup approach?",
+        "options": {
+            "A": "Disk-based backup target",
+            "B": "Agent-based backup client",
+            "C": "NDMP server",
+            "D": "Data deduplication server"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 93,
+        "question": "What is a benefit of a 'recovery-in-place' backup approach in a virtualized data center?",
+        "options": {
+            "A": "Provides instant recovery of a failed virtual machine",
+            "B": "Reduces the recovery point objective",
+            "C": "Eliminates redundant data during virtual machine backups",
+            "D": "Eliminates the backup window"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 94,
+        "question": "What is an advantage of performing cumulative backups compared to incremental backups for the same data?",
+        "options": {
+            "A": "Facilitates faster restores",
+            "B": "Facilitates faster backups",
+            "C": "Reduces the storage space required for backups",
+            "D": "Eliminates the need for full backups"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 95,
+        "question": "What is an accurate statement about incremental forever backups?",
+        "options": {
+            "A": "Requires only one initial full back up",
+            "B": "Requires periodic full back ups",
+            "C": "Backup is not created directly from the production data",
+            "D": "Copies the data that has changed since the last full back up"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 96,
+        "question": "Why is it important for organizations to maintain a copy of data at a remote site?",
+        "options": {
+            "A": "Ensure disaster recovery",
+            "B": "Provide operational recovery",
+            "C": "Ensure data archiving to meet regulatory requirements",
+            "D": "Provide flexibility to use stub files for production operations"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 97,
+        "question": "An organization has several virtual machines (VMs) deployed in their data center. The VM files are stored on a block-based storage system. The applications on the VMs are impacted during VM backup because the backup agents on the VMs are consuming a large amount of resources. Which alternate backup solution is recommended to address this issue?",
+        "options": {
+            "A": "Image-based backup",
+            "B": "Three-way NDMP backup",
+            "C": "Two-way NDMP backup",
+            "D": "Target-based deduplication backup"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 98,
+        "question": "What is an accurate statement about three-way NDMP backup in a NAS environment?",
+        "options": {
+            "A": "Backup device can be shared among multiple NAS heads",
+            "B": "Each NAS head should have a dedicated backup device",
+            "C": "Backup data traverses at least three NAS heads before reaching the backup device",
+            "D": "Backup is performed only when three or more NAS heads are present"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 99,
+        "question": "Which type of storage system is built specifically for storing fixed content?",
+        "options": {
+            "A": "Content addressed storage",
+            "B": "Block-based storage",
+            "C": "File-based storage",
+            "D": "Unified storage"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 100,
+        "question": "An organization plans to deploy a deduplication solution by retaining their legacy backup application. They are concerned about the application servers performance and a long backup window during backups. Which deduplication solution(s) should be recommended to the organization?",
+        "options": {
+            "A": "Post-process",
+            "B": "Source-based global deduplication",
+            "C": "Variable-length segment and source-based",
+            "D": "Fixed-length block and source-based"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 101,
+        "question": "What is an accurate statement about the function of an archiving server?",
+        "options": {
+            "A": "Enables the ability to configure policies for archiving data",
+            "B": "Installs agents on the archiving storage device",
+            "C": "Scans the data that can be archived on application servers",
+            "D": "Creates stub files on an archiving storage device"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 102,
+        "question": "What is a benefit of using content addressed storage (CAS) as an archival solution?",
+        "options": {
+            "A": "Ensures content authenticity and integrity",
+            "B": "Supports location independence using different content IDs for an object",
+            "C": "Provides the ability to perform production operations on the CAS",
+            "D": "Enables modification of archived data"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 103,
+        "question": "What is determined based on the recovery point objective in an asynchronous remote replication?",
+        "options": {
+            "A": "Size of the buffer",
+            "B": "Size of the replica",
+            "C": "Response time",
+            "D": "Location of the source"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 104,
+        "question": "What is an accurate statement about full volume replication?",
+        "options": {
+            "A": "Target device is at least as large as the source device",
+            "B": "Target device requires only a fraction of the space used by the source device",
+            "C": "Target device is accessible only after the replication session starts",
+            "D": "Target and source devices should be on different storage arrays"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 105,
+        "question": "What is an accurate statement about a virtual machine (VM) snapshot?",
+        "options": {
+            "A": "Captures the state and data of a running VM at a specific point-in-time",
+            "B": "Provides the capability to delete the parent VM once the snapshot is created",
+            "C": "Runs as an independent copy from the parent VM",
+            "D": "Provides the capability to restore VM data to any point-in-time"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 106,
+        "question": "What is a benefit of deploying a multi-site storage system-based remote replication solution?",
+        "options": {
+            "A": "Ensures disaster recovery protection remains available in the event of source or remote site failures",
+            "B": "Provides the capability to recover data to any point-in-time",
+            "C": "Requires network bandwidth to perform synchronous replication",
+            "D": "Enables a consistent near-zero RPO in the event of source and remote site failures"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 107,
+        "question": "Which EMC product provides a remote replication solution for EMC VMAX3 storage systems?",
+        "options": {
+            "A": "SRDF",
+            "B": "SnapSure",
+            "C": "MirrorView",
+            "D": "ProtectPoint"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 108,
+        "question": "What determines how far back the recovery points can go in a continuous data protection (CDP) solution?",
+        "options": {
+            "A": "Amount of space that is configured for the journal",
+            "B": "Size of the CDP appliance used for replication",
+            "C": "Size of the source and replica volumes",
+            "D": "Type of write splitter used for replication"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 109,
+        "question": "In continuous data protection (CDP) remote replication, where are the two split write I/Os of an incoming write I/O directed?",
+        "options": {
+            "A": "One I/O goes to the local CDP appliance and the other I/O goes to the production volume",
+            "B": "One I/O goes to the compute system and the other I/O goes to the production volume",
+            "C": "One I/O goes to the remote CDP appliance and the other I/O goes to the replica",
+            "D": "One I/O goes to the journal volume and the other I/O goes to the replica"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 110,
+        "question": "What is a benefit of implementing a virtual machine (VM) storage migration?",
+        "options": {
+            "A": "Balances storage utilization by redistributing VMs across different storage systems",
+            "B": "Enables VMs to keep functioning even if the source data is lost due to failure",
+            "C": "Improves the security of applications running inside VMs on the migrated storage system",
+            "D": "Reduces the overall storage system capacity requirements for organizations"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 111,
+        "question": "What is an accurate statement about hypervisor-based continuous data protection (CDP)?",
+        "options": {
+            "A": "Write splitter is embedded in the hypervisor",
+            "B": "Journal is stored in a virtual machine",
+            "C": "Journal and replica use the same storage volume",
+            "D": "Virtual appliance runs on a storage system"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 112,
+        "question": "What is an example of an active attack on an IT infrastructure?",
+        "options": {
+            "A": "Attempt to modify information for malicious purposes",
+            "B": "Attempt to copy the data from the storage system",
+            "C": "Attempt to gain unauthorized access into the system",
+            "D": "Attempt to gain access to the data in transit"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 113,
+        "question": "What is compromised by a passive attack on an IT infrastructure?",
+        "options": {
+            "A": "Confidentiality",
+            "B": "Integrity",
+            "C": "Availability",
+            "D": "Repudiation"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 114,
+        "question": "What is an accurate statement about a denial-of-service attack?",
+        "options": {
+            "A": "Prevents legitimate users from accessing resources or services",
+            "B": "Intentional misuse of privileges to compromise data security",
+            "C": "Gaining unauthorized access to a user's accounts and data",
+            "D": "Captures a user's credentials and then sends to the attacker"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 115,
+        "question": "Which attack is carried out by sending a spoofing e-mail and redirecting a user to a false website?",
+        "options": {
+            "A": "Phishing",
+            "B": "Man-in-the-middle",
+            "C": "Denial-of-service",
+            "D": "Repudiation"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 116,
+        "question": "What accurately describes an attack vector in an IT infrastructure?",
+        "options": {
+            "A": "Series of steps that must be followed in order to complete an attack",
+            "B": "Various entry points that can be used to launch an attack",
+            "C": "Amount of effort required to exploit vulnerabilities in the infrastructure",
+            "D": "Process of identifying the system components under attack"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 117,
+        "question": "What is a benefit of deploying a Defense in Depth strategy?",
+        "options": {
+            "A": "Provides additional time for organizations to detect and respond to an attack",
+            "B": "Eliminates the attack vector from the IT infrastructure",
+            "C": "Eliminates the attack surface from the IT infrastructure",
+            "D": "Enables organizations to deploy a unified security solution"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 118,
+        "question": "In an FC SAN environment, an administrator wants to ensure that a particular switch port cannot function as an E_Port and cannot be used to create an interswitch link. Which security mechanism should the administrator use?",
+        "options": {
+            "A": "Port type locking",
+            "B": "Port binding",
+            "C": "Persistent port disable",
+            "D": "Fabric binding"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 119,
+        "question": "In an FC SAN environment, which security mechanism prevents a switch port from being enabled even after a switch reboot?",
+        "options": {
+            "A": "Port locking",
+            "B": "Port type locking",
+            "C": "Port binding",
+            "D": "Fabric binding"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 120,
+        "question": "What enables an administrator to create device groups in an IP-SAN for restricting device communications to a group?",
+        "options": {
+            "A": "iSNS discovery domain",
+            "B": "NIC teaming",
+            "C": "Demilitarized zone",
+            "D": "Security identifier"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 121,
+        "question": "How do VSANs ensure security in an IT infrastructure?",
+        "options": {
+            "A": "By providing isolation within a shared infrastructure",
+            "B": "By authenticating a new switch that joins a fabric",
+            "C": "By limiting the number of switches in a fabric",
+            "D": "By prohibiting an untrusted switch port from being used"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 122,
+        "question": "What is an accurate statement about OAuth security control?",
+        "options": {
+            "A": "Allows a client to access protected resources from a resource server on behalf of a resource owner",
+            "B": "Provides strong authentication for client-server applications by using secret-key cryptography",
+            "C": "Enables initiators and targets to authenticate each other by using a shared secret code",
+            "D": "Enables an organization to use authentication services from an identity provider"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 123,
+        "question": "What is an accurate statement about Challenge Handshake Authentication Protocol (CHAP) control?",
+        "options": {
+            "A": "Enables initiators and targets to authenticate each other by using a shared secret code",
+            "B": "Provides strong authentication for client server applications by using secret-key cryptography",
+            "C": "Allows a client to access protected resources from a resource server on behalf of a resource owner",
+            "D": "Enables an organization to use authentication services from an identity provider"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 124,
+        "question": "What is an accurate statement about OpenID control?",
+        "options": {
+            "A": "Enables an organization to use authentication services from an identity provider",
+            "B": "Enables initiators and targets to authenticate each other by using a shared secret code",
+            "C": "Provides strong authentication for client-server applications by using secret-key cryptography",
+            "D": "Allows a client to access protected resources from a resource server on behalf of a resource owner"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 125,
+        "question": "Which technique is used in Kerberos to authenticate a client-server application across an insecure network?",
+        "options": {
+            "A": "Secret-key cryptography",
+            "B": "One-way hash function",
+            "C": "Shared secret",
+            "D": "OpenID control"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 126,
+        "question": "Which method does an intrusion detection and prevention system (IDPS) use to identify intrusions by scanning and analyzing events to detect if they are statistically different from normal events?",
+        "options": {
+            "A": "Anomaly-based",
+            "B": "Signature-based",
+            "C": "Profile-based",
+            "D": "Device-based"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 127,
+        "question": "Which method is used to establish a VPN connection between a primary and remote data center to perform secure remote replication?",
+        "options": {
+            "A": "Site-to-site VPN connection",
+            "B": "Remote access VPN connection",
+            "C": "Intra-site VPN connection",
+            "D": "Long distance VPN connection"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 128,
+        "question": "What is an activity in the risk assessment step of risk management?",
+        "options": {
+            "A": "Determine the likelihood of a risk",
+            "B": "Plan and deploy security control",
+            "C": "Continuously observe the existing risks",
+            "D": "Identify the sources of threats that increase the risks"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 129,
+        "question": "What is the purpose of monitoring capacity in a storage infrastructure?",
+        "options": {
+            "A": "Tracking the amount of storage infrastructure resources used and available",
+            "B": "Evaluating utilization of components and identifying bottlenecks",
+            "C": "Tracking configuration changes to the storage infrastructure elements",
+            "D": "Identifying component failures that may lead to service unavailability"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 130,
+        "question": "Which EMC product enables management for Vblock systems?",
+        "options": {
+            "A": "Unified Infrastructure Manager",
+            "B": "MirrorView",
+            "C": "Service Assurance Suite",
+            "D": "ViPR SRM"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 131,
+        "question": "What is an example of an availability management task in storage infrastructure management?",
+        "options": {
+            "A": "Designing a new replication solution for data redundancy",
+            "B": "[Missing from source text]",
+            "C": "[Missing from source text]",
+            "D": "[Missing from source text]"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 132,
+        "question": "Which EMC product provides automated monitoring and reporting of a software-defined storage infrastructure?",
+        "options": {
+            "A": "ViPR SRM",
+            "B": "SnapSure",
+            "C": "Avamar",
+            "D": "FAST VP"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 133,
+        "question": "What is an accurate statement about infrastructure discovery?",
+        "options": {
+            "A": "Creates an inventory of infrastructure components and provides information about the components",
+            "B": "Standardizes on-going infrastructure management activities and assesses potential risks of the activities",
+            "C": "Classifies, organizes, and analyzes all infrastructure management best practices stored in data lakes",
+            "D": "Detects potential security attacks on a storage infrastructure and deploys specialized tools to eliminate the attacks"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 134,
+        "question": "Which data center characteristic ensures that data is stored and retrieved exactly as it was received?",
+        "options": {
+            "A": "Data integrity",
+            "B": "Security",
+            "C": "Scalability",
+            "D": "Manageability"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 135,
+        "question": "What is a characteristic of a scale-out NAS?",
+        "options": {
+            "A": "File system grows dynamically as nodes are added in the cluster",
+            "B": "Up to four file systems can be created across the cluster",
+            "C": "Distinct file systems are created on each node in the cluster",
+            "D": "Different file systems can be mixed on each node in a single cluster"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 136,
+        "question": "A customer has a requirement to perform a backup each night. However, the customer has a limited amount of time for backups to run on week nights, Monday through Friday evenings. Which backup granularity type is recommended to meet the backup window for those nights?",
+        "options": {
+            "A": "Incremental",
+            "B": "Cumulative",
+            "C": "Full",
+            "D": "Differential"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 137,
+        "question": "What is a benefit when a node is added to a scale-out NAS cluster?",
+        "options": {
+            "A": "Increased cluster performance",
+            "B": "Reduced capital expenditure",
+            "C": "Simplified cluster management",
+            "D": "Decreased data duplication"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 138,
+        "question": "Why should a replica be consistent with its source?",
+        "options": {
+            "A": "Ensure the usability of the replica",
+            "B": "Reduce the need to create multiple replicas",
+            "C": "Ensure the security of the replica",
+            "D": "Reduce the size of the replica"
+        },
+        "answer": "A"
+    },
+    {
+        "id": 139,
+        "question": "What is an example of a security management task in a storage infrastructure?",
+        "options": {
+            "A": "Configuring LUN masking to restrict hosts from accessing a specific LUN",
+            "B": "Enforcing storage space quotas to restrict users from overprovisioning resources",
+            "C": "Restricting the number of simultaneous client access to application servers",
+            "D": "Enabling sending messages to a support center in the event of resource failure"
+        },
+        "answer": "A"
+    }
+]
